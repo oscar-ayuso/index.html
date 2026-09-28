@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESPALDO GESTION DE LEADS - OSCAR AYUSO GWM</title>
+    <title>GESTION DE LEADS - OSCAR AYUSO GWM</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Chart.js -->
@@ -49,7 +48,7 @@
         
         /* Efectos de Brillo Neón Ultra-Brillantes en Cabecera */
         .neon-glow-gold {
-            text-shadow: 0 0 5px rgba(251, 191, 36, 0.9), 0 0 15px rgba(251, 191, 36, 0.7), 0 0 25px rgba(251, 191, 36, 0.4);
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.9), 0 0 15px rgba(255, 215, 0, 0.7), 0 0 25px rgba(255, 215, 0, 0.4);
         }
         .neon-glow-cyan {
             text-shadow: 0 0 5px rgba(34, 211, 238, 0.9), 0 0 15px rgba(34, 211, 238, 0.7), 0 0 25px rgba(34, 211, 238, 0.4);
@@ -138,15 +137,15 @@
 </head>
 <body class="bg-white text-slate-800 min-h-screen transition-colors duration-200">
 
-    <!-- 1. PANTALLA DE ACCESO SEGURO (CORRECCIÓN DE DISEÑO DE RESPALDO) -->
+    <!-- 1. PANTALLA DE ACCESO SEGURO -->
     <div id="login-screen" class="min-h-screen w-full bg-slate-955 flex items-center justify-center p-4">
         <div class="bg-gradient-to-br from-slate-900 via-slate-955 to-slate-900 w-full max-w-md rounded-2xl border border-slate-800 shadow-2xl overflow-hidden flex flex-col">
             <div class="p-6 border-b border-slate-850 text-center">
                 <div class="w-12 h-12 bg-cyan-500/10 text-cyan-404 rounded-full flex items-center justify-center mx-auto mb-3 shadow-[0_0_15px_rgba(34,211,238,0.2)]">
                     <i data-lucide="lock" class="w-6 h-6"></i>
                 </div>
-                <h3 class="text-lg font-black text-white uppercase tracking-wider text-cyan-400 drop-shadow-[0_0_5px_#00F0FF] font-bold">Acceso de Respaldo GWM</h3>
-                <p class="text-[11px] text-slate-404 mt-1">Ingresa tus credenciales autorizadas para acceder al Dashboard de Respaldo.</p>
+                <h3 class="text-lg font-black text-white uppercase tracking-wider text-cyan-400 drop-shadow-[0_0_5px_#00F0FF] font-bold">Acceso GWM</h3>
+                <p class="text-[11px] text-slate-404 mt-1">Ingresa tus credenciales autorizadas para acceder al Dashboard.</p>
             </div>
             <form id="login-form" onsubmit="handleLoginSubmit(event)" class="p-6 space-y-4 text-xs">
                 <div>
@@ -160,7 +159,7 @@
                 <div id="login-error-msg" class="text-rose-500 font-bold hidden text-[11px] text-center bg-rose-950/20 py-2 rounded-lg border border-rose-900/30"></div>
                 
                 <button type="submit" class="w-full py-3 bg-gradient-to-r from-cyan-500 to-indigo-500 hover:from-cyan-600 hover:to-indigo-600 text-slate-955 font-black rounded-xl transition-all shadow-md shadow-cyan-500/25 uppercase tracking-wider">
-                    Conectar Base de Datos (Respaldo)
+                    Conectar Base de Datos
                 </button>
             </form>
         </div>
@@ -178,12 +177,12 @@
                         <i data-lucide="users" class="w-8 h-8"></i>
                     </div>
                     <div>
-                        <h1 id="header-main-title" class="text-2xl md:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-white uppercase neon-glow-gold">
+                        <h1 id="header-main-title" class="text-2xl md:text-4xl font-extrabold tracking-tight text-[#FFD700] uppercase neon-glow-gold">
                             GESTION DE LEADS
                         </h1>
-                        <!-- Nombre OSCAR AYUSO - GWM con Brillo Neón (Designación de Respaldo) -->
+                        <!-- Nombre OSCAR AYUSO - GWM -->
                         <p class="text-xs md:text-sm font-semibold uppercase tracking-widest text-cyan-404 mt-0.5 neon-glow-cyan">
-                            OSCAR AYUSO - GWM (RESPALDO)
+                            OSCAR AYUSO - GWM
                         </p>
                     </div>
                 </div>
@@ -246,7 +245,7 @@
             <!-- CABECERA EXCLUSIVA PARA IMPRESIÓN/PDF -->
             <div class="hidden print:block mb-6 border-b border-slate-300 pb-4">
                 <h1 id="print-title" class="text-3xl font-black uppercase text-slate-900">GESTION DE LEADS</h1>
-                <p class="text-sm font-bold tracking-wider text-slate-500 uppercase mt-1">OSCAR AYUSO - GWM (RESPALDO)</p>
+                <p class="text-sm font-bold tracking-wider text-slate-500 uppercase mt-1">OSCAR AYUSO - GWM</p>
             </div>
 
             <!-- 1. BLOQUE DE MEDICIÓN DE KPIs EN TIEMPO REAL -->
@@ -304,7 +303,7 @@
                                 <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
                                 Bloqueado
                             </span>
-                            <span class="text-[10px] bg-slate-200 text-slate-700 px-2.5 py-1.5 rounded-full font-bold">Sincronización Instantánea (Respaldo)</span>
+                            <span class="text-[10px] bg-slate-200 text-slate-700 px-2.5 py-1.5 rounded-full font-bold">Sincronización Instantánea</span>
                         </div>
                     </div>
             </section>
@@ -425,6 +424,8 @@
                             <option value="H6 HEV PREMIUM">H6 HEV PREMIUM</option>
                             <option value="H6 HEV LUXURY">H6 HEV LUXURY</option>
                             <option value="H6 PHEV">H6 PHEV</option>
+                            <option value="H7 HEV">H7 HEV</option>
+                            <option value="H7 PHEV">H7 PHEV</option>
                             <option value="POER COMERCIAL PREMIUM">POER COMERCIAL PREMIUM</option>
                             <option value="POER COMERCIAL LUXURY">POER COMERCIAL LUXURY</option>
                             <option value="POER PASAJEROS PREMIUM">POER PASAJEROS PREMIUM</option>
@@ -433,6 +434,12 @@
                             <option value="POER 500 PHEV PREMIUM">POER 500 PHEV PREMIUM</option>
                             <option value="POER 500 PHEV LUXURY">POER 500 PHEV LUXURY</option>
                             <option value="POER 500 PHEV ULTIMATE">POER 500 PHEV ULTIMATE</option>
+                            <option value="P300 MANUAL PREMIUM">P300 MANUAL PREMIUM</option>
+                            <option value="P300 MANUAL LUXURY">P300 MANUAL LUXURY</option>
+                            <option value="P300 AUTOMATICA PREMIUM">P300 AUTOMATICA PREMIUM</option>
+                            <option value="P300 AUTOMATICA LUXURY">P300 AUTOMATICA LUXURY</option>
+                            <option value="P300 AUTOMATICA LUXURY 4X4">P300 AUTOMATICA LUXURY 4X4</option>
+                            <option value="P300 PHEV">P300 PHEV</option>
                             <option value="TANK 300">TANK 300</option>
                             <option value="TANK 500 LUXURY">TANK 500 LUXURY</option>
                             <option value="TANK 500 BLACK EDITION">TANK 500 BLACK EDITION</option>
@@ -537,6 +544,8 @@
                             <option value="H6 HEV PREMIUM" class="bg-slate-955 text-white">H6 HEV PREMIUM</option>
                             <option value="H6 HEV LUXURY" class="bg-slate-955 text-white">H6 HEV LUXURY</option>
                             <option value="H6 PHEV" class="bg-slate-955 text-white">H6 PHEV</option>
+                            <option value="H7 HEV" class="bg-slate-955 text-white">H7 HEV</option>
+                            <option value="H7 PHEV" class="bg-slate-955 text-white">H7 PHEV</option>
                             <option value="POER COMERCIAL PREMIUM" class="bg-slate-955 text-white">POER COMERCIAL PREMIUM</option>
                             <option value="POER COMERCIAL LUXURY" class="bg-slate-955 text-white">POER COMERCIAL LUXURY</option>
                             <option value="POER PASAJEROS PREMIUM" class="bg-slate-955 text-white">POER PASAJEROS PREMIUM</option>
@@ -545,6 +554,12 @@
                             <option value="POER 500 PHEV PREMIUM" class="bg-slate-955 text-white">POER 500 PHEV PREMIUM</option>
                             <option value="POER 500 PHEV LUXURY" class="bg-slate-955 text-white">POER 500 PHEV LUXURY</option>
                             <option value="POER 500 PHEV ULTIMATE" class="bg-slate-955 text-white">POER 500 PHEV ULTIMATE</option>
+                            <option value="P300 MANUAL PREMIUM" class="bg-slate-955 text-white">P300 MANUAL PREMIUM</option>
+                            <option value="P300 MANUAL LUXURY" class="bg-slate-955 text-white">P300 MANUAL LUXURY</option>
+                            <option value="P300 AUTOMATICA PREMIUM" class="bg-slate-955 text-white">P300 AUTOMATICA PREMIUM</option>
+                            <option value="P300 AUTOMATICA LUXURY" class="bg-slate-955 text-white">P300 AUTOMATICA LUXURY</option>
+                            <option value="P300 AUTOMATICA LUXURY 4X4" class="bg-slate-955 text-white">P300 AUTOMATICA LUXURY 4X4</option>
+                            <option value="P300 PHEV" class="bg-slate-955 text-white">P300 PHEV</option>
                             <option value="TANK 300" class="bg-slate-955 text-white">TANK 300</option>
                             <option value="TANK 500 LUXURY" class="bg-slate-955 text-white">TANK 500 LUXURY</option>
                             <option value="TANK 500 BLACK EDITION" class="bg-slate-955 text-white">TANK 500 BLACK EDITION</option>
@@ -637,7 +652,7 @@
         <div class="bg-gradient-to-br from-slate-900 via-slate-955 to-slate-900 w-full max-w-xl rounded-2xl border border-slate-800 shadow-2xl overflow-hidden flex flex-col max-h-[85vh]">
             <div class="p-5 border-b border-slate-800 bg-slate-955/80 text-white flex justify-between items-center">
                 <div>
-                    <span class="text-[10px] font-black uppercase tracking-wider text-yellow-404 drop-shadow-[0_0_5px_rgba(250,204,21,0.6)]">Línea de Tiempo GWM (Respaldo)</span>
+                    <span class="text-[10px] font-black uppercase tracking-wider text-yellow-404 drop-shadow-[0_0_5px_rgba(250,204,21,0.6)]">Línea de Tiempo GWM</span>
                     <h3 id="follow-lead-name" class="text-sm font-black text-yellow-300 drop-shadow-[0_0_6px_rgba(250,204,21,0.5)] font-semibold">Historial del Lead</h3>
                 </div>
                 <button onclick="closeFollowModal()" class="p-1 rounded-lg hover:bg-slate-850 transition-colors">
@@ -684,6 +699,7 @@
 
         lucide.createIcons();
 
+        // ORDEN ESTÁNDAR DE ENERO A DICIEMBRE
         const monthNames = {
             "01": "Enero", "02": "Febrero", "03": "Marzo", "04": "Abril",
             "05": "Mayo", "06": "Junio", "07": "Julio", "08": "Agosto",
@@ -785,6 +801,7 @@
             listGlobal.innerHTML = '';
             listTable.innerHTML = '';
 
+            // Recorrer cronológicamente de Enero (01) a Diciembre (12)
             Object.entries(monthNames).forEach(([val, name]) => {
                 const labelG = document.createElement('label');
                 labelG.className = "flex items-center gap-2 p-1.5 hover:bg-slate-50 rounded-lg cursor-pointer text-xs font-semibold";
@@ -1063,7 +1080,7 @@
                     titleContainer.innerHTML = `
                         <h3 class="text-xl md:text-2xl font-black uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-404 via-teal-350 to-emerald-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.6)] flex items-center gap-2">
                             <i data-lucide="activity" class="w-5 h-5 text-cyan-404 animate-pulse"></i>
-                            MEDICION DE LEADS (RESPALDO)
+                            MEDICION DE LEADS
                         </h3>
                     `;
                 }
@@ -1153,7 +1170,7 @@
                     titleContainer.innerHTML = `
                         <h3 class="text-xl md:text-2xl font-black uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 via-pink-400 to-purple-500 drop-shadow-[0_0_8px_rgba(217,70,239,0.6)] flex items-center gap-2">
                             <i data-lucide="award" class="w-5 h-5 text-fuchsia-400 animate-pulse"></i>
-                            MEDICION DE CLIENTES (RESPALDO)
+                            MEDICION DE CLIENTES
                         </h3>
                     `;
                 }
@@ -1268,7 +1285,7 @@
                     titleContainer.innerHTML = `
                         <h3 class="text-xl md:text-2xl font-black uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-350 to-cyan-404 drop-shadow-[0_0_8px_rgba(52,211,153,0.6)] flex items-center gap-2">
                             <i data-lucide="check-square" class="w-5 h-5 text-emerald-400 animate-pulse"></i>
-                            MEDICION DE FACTURAS (RESPALDO)
+                            MEDICION DE FACTURAS
                         </h3>
                     `;
                 }
@@ -1323,278 +1340,124 @@
                     return matchMonth && matchYear;
                 }).length;
 
-                const facturadasTotalesCombined = fLeads + fClientes;
+                const totalFacturas = fLeads + fClientes;
 
-                const leadsPct = facturadasTotalesCombined > 0 ? Math.round((fLeads / facturadasTotalesCombined) * 100) : 0;
-                const clientesPct = facturadasTotalesCombined > 0 ? Math.round((fClientes / facturadasTotalesCombined) * 100) : 0;
-
-                const modelCounts = {};
-                [...leads, ...clientes].filter(l => l.status?.toUpperCase() === 'FACTURADA').filter(l => {
-                    let matchMonth = true;
-                    if (selectedMonths.length > 0) {
-                        const dateToUse = l.facturadaDate || l.date;
-                        if (dateToUse) {
-                            const r_month = dateToUse.substring(5, 7);
-                            matchMonth = selectedMonths.includes(r_month);
-                        } else {
-                            matchMonth = false;
-                        }
-                    }
-                    let matchYear = true;
-                    const yearVal = document.getElementById('global-year-filter').value;
-                    if (yearVal) {
-                        const dateToUse = l.facturadaDate || l.date;
-                        if (dateToUse) {
-                            const r_year = dateToUse.substring(0, 4);
-                            matchYear = (r_year === yearVal);
-                        } else {
-                            matchYear = false;
-                        }
-                    }
-                    return matchMonth && matchYear;
-                }).forEach(l => {
-                    const model = l.model?.trim() || "Sin modelo";
-                    if (model && model !== "Sin modelo") {
-                        modelCounts[model] = (modelCounts[model] || 0) + 1;
-                    }
-                });
-
-                let modeloMasVendido = "Ninguno";
-                let maxCount = 0;
-                for (const [model, count] of Object.entries(modelCounts)) {
-                    if (count > maxCount) {
-                        maxCount = count;
-                        modeloMasVendido = model;
-                    }
-                }
-
-                container.className = "flex flex-col gap-4 w-full";
+                container.className = "grid grid-cols-1 md:grid-cols-3 gap-4 w-full animate-none";
                 container.innerHTML = `
-                    <div class="flex justify-center w-full">
-                        <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-6 rounded-2xl border-2 border-[#39FF14] hover:shadow-lg hover:shadow-[#39FF14]/25 shadow-[0_0_20px_rgba(57,255,20,0.4)] text-white w-full max-w-xl flex flex-col justify-between items-center text-center h-[140px]">
-                            <div class="flex flex-col items-center gap-1">
-                                <div class="p-2 rounded-full bg-[#39FF14]/10 text-[#39FF14] drop-shadow-[0_0_8px_#39FF14]">
-                                    <i data-lucide="check-square" class="w-6 h-6"></i>
-                                </div>
-                                <span class="text-sm font-black uppercase tracking-widest text-[#39FF14] drop-shadow-[0_0_5px_#39FF14] mt-1">Facturas Totales</span>
-                            </div>
-                            <span class="text-4xl font-black text-white tracking-tight leading-none">${facturadasTotalesCombined}</span>
-                        </div>
+                    <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-[#39FF14]/25 shadow-[0_0_15px_rgba(57,255,20,0.15)] print-card text-white flex flex-col items-center justify-center text-center">
+                        <div class="p-1.5 rounded bg-slate-955/40 text-[#39FF14] drop-shadow-[0_0_6px_#39FF14] mb-1"><i data-lucide="check-square" class="w-5 h-5"></i></div>
+                        <span class="text-xs font-black uppercase tracking-wider text-[#39FF14] drop-shadow-[0_0_6px_#39FF14]">Total Unidades Facturadas</span>
+                        <span class="text-3xl font-black text-white tracking-tight mt-1">${totalFacturas}</span>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 w-full">
-                        <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-slate-500/25 shadow-[0_0_15px_rgba(203,213,225,0.15)] print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center gap-2">
-                            <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#CBD5E1] drop-shadow-[0_0_5px_#CBD5E1]"><i data-lucide="users" class="w-5 h-5"></i></div>
-                            <span class="text-xs font-black uppercase tracking-wider text-[#CBD5E1] drop-shadow-[0_0_5px_#CBD5E1]">FACTURAS LEADS</span>
-                            <div class="flex items-center justify-center gap-2 mt-1">
-                                <span class="text-4xl font-black text-[#CBD5E1] drop-shadow-[0_0_5px_#CBD5E1] tracking-tight leading-none">${fLeads}</span>
-                                <span class="text-xs font-bold text-[#CBD5E1] bg-slate-900/60 border border-slate-700 px-2 py-0.5 rounded-full font-black">(${leadsPct}%)</span>
-                            </div>
-                        </div>
+                    <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-[#00F0FF]/25 shadow-[0_0_15px_rgba(0,240,255,0.15)] print-card text-white flex flex-col items-center justify-center text-center">
+                        <div class="p-1.5 rounded bg-slate-955/40 text-[#00F0FF] drop-shadow-[0_0_6px_#00F0FF] mb-1"><i data-lucide="activity" class="w-5 h-5"></i></div>
+                        <span class="text-xs font-black uppercase tracking-wider text-[#00F0FF] drop-shadow-[0_0_6px_#00F0FF]">Provenientes de Leads</span>
+                        <span class="text-3xl font-black text-white tracking-tight mt-1">${fLeads}</span>
+                    </div>
 
-                        <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-purple-400/10 shadow-[0_0_8px_rgba(216,180,254,0.1)] print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center gap-2">
-                            <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#D8B4FE]"><i data-lucide="award" class="w-5 h-5"></i></div>
-                            <span class="text-xs font-black uppercase tracking-wider text-[#D8B4FE] font-bold">FACTURAS CLIENTES</span>
-                            <div class="flex items-center justify-center gap-2 mt-1">
-                                <span class="text-4xl font-black text-[#D8B4FE] tracking-tight leading-none">${fClientes}</span>
-                                <span class="text-xs font-bold text-[#D8B4FE] bg-purple-950/40 border border-purple-900/30 px-2 py-0.5 rounded-full font-bold">(${clientesPct}%)</span>
-                            </div>
-                        </div>
-
-                        <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-blue-500/25 shadow-[0_0_15px_rgba(37,99,235,0.15)] print-card text-white font-bold min-h-[125px] flex flex-col items-center justify-center text-center gap-2">
-                            <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#2563EB] drop-shadow-[0_0_5px_#2563EB]"><i data-lucide="trending-up" class="w-5 h-5"></i></div>
-                            <span class="text-xs font-black uppercase tracking-wider text-[#2563EB] drop-shadow-[0_0_5px_#2563EB]">Modelo Más Vendido</span>
-                            <span class="text-sm md:text-base font-black text-white tracking-tight leading-tight whitespace-normal break-words max-w-full mt-1" title="${modeloMasVendido}">${modeloMasVendido}</span>
-                        </div>
+                    <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-[#A855F7]/25 shadow-[0_0_15px_rgba(168,85,247,0.15)] print-card text-white flex flex-col items-center justify-center text-center">
+                        <div class="p-1.5 rounded bg-slate-955/40 text-[#A855F7] drop-shadow-[0_0_6px_#A855F7] mb-1"><i data-lucide="award" class="w-5 h-5"></i></div>
+                        <span class="text-xs font-black uppercase tracking-wider text-[#A855F7] drop-shadow-[0_0_6px_#A855F7]">Provenientes de Clientes</span>
+                        <span class="text-3xl font-black text-white tracking-tight mt-1">${fClientes}</span>
                     </div>
                 `;
             }
             lucide.createIcons();
         }
 
-        function renderTableHeaders() {
-            const headerRow = document.getElementById('table-header-row');
-            if (!headerRow) return;
-            if (activeTab === 'leads') {
-                headerRow.innerHTML = `
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Fecha</th>
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Cliente</th>
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Celular</th>
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Modelo</th>
-                    <th class="px-6 py-3.5 text-center font-extrabold text-slate-700">Estado</th>
-                    <th class="px-6 py-3.5 text-center no-print font-extrabold text-slate-700">Acciones</th>
-                `;
-            } else if (activeTab === 'clientes') {
-                headerRow.innerHTML = `
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Fecha</th>
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Cliente</th>
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Tipo de Cliente</th>
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Celular</th>
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Modelo</th>
-                    <th class="px-6 py-3.5 text-center font-extrabold text-slate-700">Estado</th>
-                    <th class="px-6 py-3.5 text-center no-print font-extrabold text-slate-700">Acciones</th>
-                `;
-            } else if (activeTab === 'facturadas') {
-                headerRow.innerHTML = `
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Fecha Ingreso</th>
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Fecha Facturación</th>
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Cliente</th>
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Modelo de Vehículo</th>
-                    <th class="px-6 py-3.5 font-extrabold text-slate-700">Categoría (Origen)</th>
-                `;
-            }
-        }
-
         function renderEstadoActualWidget() {
             const container = document.getElementById('estado-actual-container');
             if (!container) return;
             container.innerHTML = '';
-            
-            const allFacturadas = [...leads, ...clientes].filter(l => l.status?.toUpperCase() === 'FACTURADA').filter(l => {
-                let matchMonth = true;
-                if (selectedMonths.length > 0) {
-                    const dateToUse = l.facturadaDate || l.date;
-                    if (dateToUse) {
-                        const r_month = dateToUse.substring(5, 7);
-                        matchMonth = selectedMonths.includes(r_month);
-                    } else {
-                        matchMonth = false;
-                    }
-                }
-                let matchYear = true;
-                const yearVal = document.getElementById('global-year-filter').value;
-                if (yearVal) {
-                    const dateToUse = l.facturadaDate || l.date;
-                    if (dateToUse) {
-                        const r_year = dateToUse.substring(0, 4);
-                        matchYear = (r_year === yearVal);
-                    } else {
-                        matchYear = false;
-                    }
-                }
-                return matchMonth && matchYear;
-            });
 
             if (activeTab === 'facturadas') {
+                container.className = "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 w-full";
+                
                 const modelCounts = {};
-                allFacturadas.forEach(l => {
-                    const model = l.model?.trim() || "Sin modelo";
-                    modelCounts[model] = (modelCounts[model] || 0) + 1;
+                filteredLeads.forEach(l => {
+                    const m = l.model || 'SIN DEFINIR';
+                    modelCounts[m] = (modelCounts[m] || 0) + 1;
                 });
-                
+
                 const sortedModels = Object.entries(modelCounts).sort((a, b) => b[1] - a[1]);
-                container.className = "grid grid-cols-2 md:grid-cols-3 gap-2.5 w-full";
-                
+
                 if (sortedModels.length === 0) {
-                    container.innerHTML = `<div class="col-span-full text-center text-slate-404 py-6">No hay modelos facturados registrados.</div>`;
+                    container.innerHTML = `<p class="col-span-full text-center text-xs text-slate-400 py-4">No hay facturas registradas en este período.</p>`;
                     return;
                 }
 
-                sortedModels.forEach(([model, count]) => {
-                    const rawCard = `
-                        <div class="bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 border border-slate-800 p-3 rounded-xl flex flex-col justify-between hover:scale-[1.02] transition-all min-h-[90px] shadow-sm text-white">
-                            <div class="flex items-start gap-1.5 min-w-0">
-                                <span class="w-2.5 h-2.5 rounded-full bg-[#39FF14] shrink-0 animate-pulse mt-1.5"></span>
-                                <span class="text-sm font-bold text-[#00F0FF] drop-shadow-[0_0_5px_#00F0FF] whitespace-normal break-words" title="${model}">
-                                    ${model}
-                                </span>
-                            </div>
-                            <div class="mt-2 flex items-baseline justify-between">
-                                <span class="text-2xl font-black text-white tracking-tight">${count}</span>
-                            </div>
+                const totalFact = filteredLeads.length;
+
+                sortedModels.forEach(([modelName, count]) => {
+                    const pct = totalFact > 0 ? Math.round((count / totalFact) * 100) : 0;
+                    
+                    const card = document.createElement('div');
+                    card.className = "bg-slate-900 p-3 rounded-xl border border-slate-800 shadow-sm flex flex-col justify-between text-white hover:border-emerald-500/50 transition-all";
+                    card.innerHTML = `
+                        <span class="text-[10px] font-black text-emerald-400 truncate uppercase tracking-wider" title="${modelName}">${modelName}</span>
+                        <div class="flex items-baseline justify-between mt-2">
+                            <span class="text-2xl font-black text-white">${count}</span>
+                            <span class="text-[10px] font-bold text-emerald-400 bg-emerald-950/60 border border-emerald-800/50 px-1.5 py-0.5 rounded">${pct}%</span>
                         </div>
                     `;
-                    container.insertAdjacentHTML('beforeend', rawCard);
+                    container.appendChild(card);
                 });
+
                 return;
             }
 
-            const estadosPosibles = [
-                { name: "FACTURADA", color: "bg-[#39FF14]", neonText: "neon-text-neon-green", bgCard: "bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950" },
-                { name: "POR DEFINIR", color: "bg-slate-400", neonText: "neon-text-slate", bgCard: "bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950" },
-                { name: "SEGUIMIENTO", color: "bg-sky-500", neonText: "neon-text-sky", bgCard: "bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950" },
-                { name: "SEGUIMIENTO PROGRAMADO", color: "bg-violet-600", neonText: "neon-text-violet", bgCard: "bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950" },
-                { name: "SEGUIMIENTO INTENSO", color: "bg-amber-500", neonText: "neon-text-amber", bgCard: "bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950" },
-                { name: "NO CONTESTA", color: "bg-fuchsia-500", neonText: "neon-text-fuchsia", bgCard: "bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950" },
-                { name: "NO INTERESADO", color: "bg-rose-500", neonText: "neon-text-rose", bgCard: "bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950" },
-                { name: "COMPRO OTRA MARCA", color: "bg-red-600", neonText: "neon-text-red", bgCard: "bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950" },
-                { name: "PERDIDA", color: "bg-stone-500", neonText: "neon-text-stone", bgCard: "bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950" }
+            container.className = "grid grid-cols-3 gap-2 w-full";
+
+            const statuses = [
+                { key: 'POR DEFINIR', label: 'POR DEFINIR', color: 'slate', border: 'border-slate-800', text: 'text-slate-400' },
+                { key: 'SEGUIMIENTO', label: 'SEGUIMIENTO', color: 'sky', border: 'border-sky-900/50', text: 'text-sky-400' },
+                { key: 'SEGUIMIENTO PROGRAMADO', label: 'SEG. PROGRAMADO', color: 'violet', border: 'border-violet-900/50', text: 'text-violet-400' },
+                { key: 'SEGUIMIENTO INTENSO', label: 'SEG. INTENSO', color: 'amber', border: 'border-amber-900/50', text: 'text-amber-400' },
+                { key: 'FACTURADA', label: 'FACTURADA', color: 'emerald', border: 'border-emerald-900/50', text: 'text-[#39FF14]' },
+                { key: 'NO CONTESTA', label: 'NO CONTESTA', color: 'fuchsia', border: 'border-fuchsia-900/50', text: 'text-fuchsia-400' },
+                { key: 'NO INTERESADO', label: 'NO INTERESADO', color: 'rose', border: 'border-rose-900/50', text: 'text-rose-400' },
+                { key: 'COMPRO OTRA MARCA', label: 'COMPRÓ OTRA MARCA', color: 'red', border: 'border-red-900/50', text: 'text-red-400' },
+                { key: 'PERDIDA', label: 'PERDIDA', color: 'stone', border: 'border-stone-800', text: 'text-stone-400' }
             ];
 
-            const totalFiltered = filteredLeads.length;
-            container.className = "grid grid-cols-2 md:grid-cols-3 gap-2 w-full";
-            estadosPosibles.forEach(item => {
-                const count = filteredLeads.filter(l => l.status === item.name).length;
-                const pct = totalFiltered > 0 ? Math.round((count / totalFiltered) * 100) : 0;
+            const total = filteredLeads.length;
 
-                const rawCard = `
-                    <div class="${item.bgCard} border border-slate-800 p-2.5 rounded-xl flex flex-col justify-between hover:scale-[1.02] transition-all min-h-[105px] shadow-sm text-white">
-                        <div class="flex items-start gap-1.5 min-w-0">
-                            <span class="w-2.5 h-2.5 rounded-full ${item.color} shrink-0 animate-pulse mt-1.5"></span>
-                            <span class="text-sm md:text-base font-black uppercase tracking-wider text-white ${item.neonText} whitespace-normal break-words" title="${item.name}">
-                                ${item.name}
-                            </span>
-                        </div>
-                        <div class="mt-2 flex items-baseline justify-between">
-                            <span class="text-3xl font-black text-white tracking-tight">${count}</span>
-                            <span class="text-xs font-extrabold text-slate-404">(${pct}%)</span>
-                        </div>
+            statuses.forEach(s => {
+                const count = filteredLeads.filter(l => (l.status || 'POR DEFINIR').toUpperCase() === s.key).length;
+                const pct = total > 0 ? Math.round((count / total) * 100) : 0;
+
+                const card = document.createElement('div');
+                card.className = `bg-slate-900 p-2.5 rounded-xl border ${s.border} shadow-sm flex flex-col justify-between text-white hover:scale-[1.02] transition-all`;
+                
+                let textClass = s.text;
+                if (s.key === 'FACTURADA') {
+                    textClass = "neon-text-neon-green font-black";
+                } else {
+                    textClass += ` neon-text-${s.color}`;
+                }
+
+                card.innerHTML = `
+                    <span class="text-[9px] font-black uppercase tracking-wider ${textClass} truncate">${s.label}</span>
+                    <div class="flex items-baseline justify-between mt-1">
+                        <span class="text-xl font-black text-white leading-none">${count}</span>
+                        <span class="text-[9px] font-bold text-slate-400">${pct}%</span>
                     </div>
                 `;
-                container.insertAdjacentHTML('beforeend', rawCard);
+                container.appendChild(card);
             });
         }
 
         function renderConversionChart() {
-            const canvasElement = document.getElementById('conversionChart');
-            if (!canvasElement) return;
-            const ctx = canvasElement.getContext('2d');
-            
-            const activeBase = (activeTab === 'leads' ? leads : (activeTab === 'clientes' ? clientes : [...leads, ...clientes]));
+            const ctx = document.getElementById('conversionChart')?.getContext('2d');
+            if (!ctx) return;
 
-            const yearVal = document.getElementById('global-year-filter').value;
-            const modelVal = document.getElementById('filter-model').value;
-            
-            const contextLeads = activeBase.filter(l => {
-                let matchMonth = true;
-                if (selectedMonths.length > 0) {
-                    const dateToUse = (activeTab === 'facturadas' || l.status?.toUpperCase() === 'FACTURADA') ? (l.facturadaDate || l.date) : l.date;
-                    if (dateToUse) {
-                        const r_month = dateToUse.substring(5, 7);
-                        matchMonth = selectedMonths.includes(r_month);
-                    } else {
-                        matchMonth = false;
-                    }
-                }
-                let matchYear = true;
-                if (yearVal) {
-                    const dateToUse = (activeTab === 'facturadas' || l.status?.toUpperCase() === 'FACTURADA') ? (l.facturadaDate || l.date) : l.date;
-                    if (dateToUse) {
-                        const r_year = dateToUse.substring(0, 4);
-                        matchYear = (r_year === yearVal);
-                    } else {
-                        matchYear = false;
-                    }
-                }
-                const matchModel = !modelVal || (l.model === modelVal);
-                return matchMonth && matchYear && matchModel;
-            });
+            const total = filteredLeads.length;
+            const facturadas = filteredLeads.filter(l => l.status?.toUpperCase() === 'FACTURADA').length;
+            const pct = total > 0 ? Math.round((facturadas / total) * 100) : 0;
 
-            const totalInContext = contextLeads.length;
-            const facturadasInContext = contextLeads.filter(l => l.status?.toUpperCase() === 'FACTURADA').length;
-            const tasaConversion = totalInContext > 0 ? ((facturadasInContext / totalInContext) * 100).toFixed(1) : "0.0";
-
-            document.getElementById('chart-center-percentage').textContent = `${tasaConversion}%`;
-
-            const gradientFacturada = ctx.createLinearGradient(0, 0, 0, 180);
-            gradientFacturada.addColorStop(0, '#39FF14');   
-            gradientFacturada.addColorStop(0.5, '#00FF66'); 
-            gradientFacturada.addColorStop(1, '#00CC44');   
-
-            const gradientOtros = ctx.createLinearGradient(0, 0, 0, 180);
-            gradientOtros.addColorStop(0, '#FFFFFF');   
-            gradientOtros.addColorStop(0.3, '#CBD5E1'); 
-            gradientOtros.addColorStop(1, '#475569');   
+            const pctLabel = document.getElementById('chart-center-percentage');
+            if (pctLabel) pctLabel.textContent = `${pct}%`;
 
             if (conversionChartInstance) {
                 conversionChartInstance.destroy();
@@ -1603,1275 +1466,214 @@
             conversionChartInstance = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Facturadas', 'Otros Estados'],
+                    labels: ['Facturadas', 'Otras'],
                     datasets: [{
-                        data: [facturadasInContext, Math.max(0, totalInContext - facturadasInContext)],
-                        backgroundColor: [gradientFacturada, gradientOtros],
-                        hoverBackgroundColor: ['#39FF14', '#94A3B8'],
-                        borderWidth: 2,
-                        borderColor: '#ffffff'
+                        data: [facturadas, Math.max(0, total - facturadas)],
+                        backgroundColor: ['#10B981', '#1E293B'],
+                        borderWidth: 0,
+                        hoverOffset: 4
                     }]
                 },
                 options: {
+                    cutout: '78%',
                     responsive: true,
                     maintainAspectRatio: false,
-                    cutout: '72%',
                     plugins: {
                         legend: { display: false },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    const val = context.raw;
-                                    const pct = totalInContext > 0 ? ((val / totalInContext) * 100).toFixed(1) : 0;
-                                    return ` ${context.label}: ${val} (${pct}%)`;
-                                }
-                            }
-                        }
+                        tooltip: { enabled: false }
                     }
                 }
             });
 
+            const modelsListContainer = document.getElementById('models-facturadas-list');
+            if (!modelsListContainer) return;
+            modelsListContainer.innerHTML = '';
+
+            const facturadosList = filteredLeads.filter(l => l.status?.toUpperCase() === 'FACTURADA');
             const modelCounts = {};
 
-            contextLeads.filter(l => l.status?.toUpperCase() === 'FACTURADA').forEach(l => {
-                const modelName = l.model?.trim() || "Por definir / Sin modelo";
-                modelCounts[modelName] = (modelCounts[modelName] || 0) + 1;
+            facturadosList.forEach(l => {
+                const m = l.model || 'SIN DEFINIR';
+                modelCounts[m] = (modelCounts[m] || 0) + 1;
             });
 
-            const listContainer = document.getElementById('models-facturadas-list');
-            if (listContainer) {
-                listContainer.innerHTML = '';
-                const sortedModels = Object.keys(modelCounts).sort((a, b) => modelCounts[b] - modelCounts[a]);
+            const sorted = Object.entries(modelCounts).sort((a, b) => b[1] - a[1]);
 
-                if (sortedModels.length === 0) {
-                    listContainer.innerHTML = `
-                        <div class="h-full flex items-center justify-center py-6">
-                            <p class="text-[10px] text-slate-404 italic text-center">No hay unidades facturadas registradas.</p>
-                        </div>
-                    `;
-                } else {
-                    sortedModels.forEach(model => {
-                        const count = modelCounts[model];
-                        const rowHTML = `
-                            <div class="flex items-center justify-between bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 border border-slate-800 p-2.5 rounded-lg transition-all gap-2 shadow-[0_0_10px_rgba(34,211,238,0.05)] animate-none">
-                                <span class="font-bold text-[#00F0FF] text-[11px] whitespace-normal break-words leading-tight flex-1 drop-shadow-[0_0_4px_#00F0FF]" title="${model}">${model}</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black bg-[#39FF14] text-slate-955 shadow-sm shadow-[#39FF14]/30 shrink-0">
-                                    ${count}
-                                </span>
-                            </div>
-                        `;
-                        listContainer.insertAdjacentHTML('beforeend', rowHTML);
-                    });
-                }
+            if (sorted.length === 0) {
+                modelsListContainer.innerHTML = `<span class="block text-center text-[10px] text-slate-400 py-1">Sin modelos facturados</span>`;
+                return;
             }
-        }
 
-        function getInteractionsHTML(lead) {
-            const cActive = lead.contacted ? 'text-purple-600 bg-purple-50 border-purple-200 opacity-100 font-extrabold' : 'text-slate-300 bg-slate-50 border-slate-100 opacity-25';
-            const cotActive = lead.cotizacion ? 'text-blue-600 bg-blue-50 border-blue-200 opacity-100 font-extrabold' : 'text-slate-300 bg-slate-50 border-slate-100 opacity-25';
-            const citActive = lead.cita ? 'text-pink-600 bg-pink-50 border-pink-200 opacity-100 font-extrabold' : 'text-slate-300 bg-slate-50 border-slate-100 opacity-25';
-            const prActive = lead.prueba ? 'text-orange-600 bg-orange-50 border-orange-200 opacity-100 font-extrabold' : 'text-slate-300 bg-slate-50 border-slate-100 opacity-25';
-
-            return `
-                <div class="flex items-center gap-1.5 mt-1.5 select-none" onclick="event.stopPropagation();">
-                    <span class="inline-flex items-center justify-center w-6 h-6 rounded-md border text-center transition-all ${cActive}" title="Contactado">
-                        <i data-lucide="phone-call" class="w-3 h-3"></i>
-                    </span>
-                    <span class="inline-flex items-center justify-center w-6 h-6 rounded-md border text-center transition-all ${cotActive}" title="Cotización">
-                        <i data-lucide="file-text" class="w-3 h-3"></i>
-                    </span>
-                    <span class="inline-flex items-center justify-center w-6 h-6 rounded-md border text-center transition-all ${citActive}" title="Cita">
-                        <i data-lucide="calendar" class="w-3 h-3"></i>
-                    </span>
-                    <span class="inline-flex items-center justify-center w-6 h-6 rounded-md border text-center transition-all ${prActive}" title="Prueba de Manejo">
-                        <i data-lucide="car" class="w-3 h-3"></i>
-                    </span>
-                </div>
-            `;
-        }
-
-        function renderLeadsTable() {
-            const tbody = document.getElementById('leads-table-body');
-            if (!tbody) return;
-            tbody.innerHTML = '';
-
-            const startIndex = (currentPage - 1) * itemsPerPage;
-            const endIndex = Math.min(startIndex + itemsPerPage, filteredLeads.length);
-            const paginatedData = filteredLeads.slice(startIndex, endIndex);
-
-            if (paginatedData.length === 0) {
-                tbody.innerHTML = `
-                    <tr>
-                        <td colspan="${activeTab === 'leads' ? 6 : (activeTab === 'clientes' ? 7 : 5)}" class="px-6 py-12 text-center text-slate-404">
-                            <i data-lucide="inbox" class="w-8 h-8 mx-auto mb-2 text-slate-404"></i>
-                            No se encontraron registros con los filtros activos.
-                        </td>
-                    </tr>
+            sorted.forEach(([model, count]) => {
+                const item = document.createElement('div');
+                item.className = "flex items-center justify-between text-xs py-1 border-b border-slate-100 last:border-0";
+                item.innerHTML = `
+                    <span class="font-bold text-slate-700 truncate max-w-[200px]" title="${model}">${model}</span>
+                    <span class="font-extrabold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full text-[10px]">${count} un.</span>
                 `;
-                document.getElementById('pagination-info').textContent = "Mostrando 0 de 0 registros";
-                document.getElementById('btn-prev').disabled = true;
-                document.getElementById('btn-next').disabled = true;
-                lucide.createIcons();
-                return;
-            }
-
-            paginatedData.forEach(lead => {
-                const isLastInteracted = (parseInt(lead.id) === lastInteractedId);
-                const rowClass = isLastInteracted 
-                    ? "row-highlight-active hover:bg-purple-200/50 transition-all duration-300" 
-                    : "bg-white hover:bg-slate-100 transition-colors";
-
-                const filtradoLabel = lead.model && lead.model.trim() !== "" 
-                    ? `<div class="font-semibold text-slate-900 text-xs break-words whitespace-normal max-w-[200px]">${lead.model}</div><span class="inline-flex items-center gap-1 text-[10px] text-emerald-600 font-bold mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Filtrado</span>`
-                    : `<span class="text-slate-350 italic">No especificado</span><span class="block text-[10px] text-rose-500 font-bold mt-0.5">Pendiente Filtrar</span>`;
-
-                let statusBadge = "";
-                const cleanStatus = (lead.status || "POR DEFINIR").toUpperCase();
-                
-                switch(cleanStatus) {
-                    case "POR DEFINIR": 
-                        statusBadge = `<span class="px-4 py-1.5 rounded-full text-xs font-bold bg-slate-100 text-slate-600 border border-slate-200 block text-center min-w-[120px]">Por Definir</span>`; 
-                        break;
-                    case "SEGUIMIENTO": 
-                        statusBadge = `<span class="px-4 py-1.5 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-100 block text-center min-w-[120px]">Seguimiento</span>`; 
-                        break;
-                    case "SEGUIMIENTO PROGRAMADO": 
-                        statusBadge = `<span class="px-4 py-1.5 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-100 block text-center min-w-[120px]">Seg. Programado</span>`; 
-                        break;
-                    case "SEGUIMIENTO INTENSO": 
-                        statusBadge = `<span class="px-4 py-1.5 rounded-full text-xs font-bold bg-orange-50 text-orange-700 border border-orange-100 block text-center min-w-[120px]">Seg. Intenso</span>`; 
-                        break;
-                    case "FACTURADA": 
-                        statusBadge = `<span class="px-4 py-1.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-100 block text-center min-w-[120px] font-black neon-text-neon-green">Facturada</span>`; 
-                        break;
-                    case "NO CONTESTA": 
-                        statusBadge = `<span class="px-4 py-1.5 rounded-full text-xs font-bold bg-purple-50 text-purple-700 border border-purple-100 block text-center min-w-[120px]">No Contesta</span>`; 
-                        break;
-                    case "NO INTERESADO": 
-                        statusBadge = `<span class="px-4 py-1.5 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-100 block text-center min-w-[120px]">No Interesado</span>`; 
-                        break;
-                    case "COMPRO OTRA MARCA": 
-                        statusBadge = `<span class="px-4 py-1.5 rounded-full text-xs font-bold bg-red-50 text-red-700 border border-red-100 block text-center min-w-[120px]">Compró Otra Marca</span>`; 
-                        break;
-                    case "PERDIDA": 
-                        statusBadge = `<span class="px-4 py-1.5 rounded-full text-xs font-bold bg-neutral-100 text-neutral-500 border border-neutral-200 block text-center min-w-[120px]">Perdida</span>`; 
-                        break;
-                    default: 
-                        statusBadge = `<span class="px-4 py-1.5 rounded-full text-xs font-bold bg-slate-800 text-slate-300 border border-slate-700 block text-center min-w-[120px]">${lead.status}</span>`;
-                }
-
-                const cleanPhone = lead.phone ? lead.phone.replace(/\D/g, '') : '';
-                const waPhone = cleanPhone.length === 10 ? '52' + cleanPhone : cleanPhone;
-                const waLink = waPhone ? `https://wa.me/${waPhone}` : '#';
-
-                const phoneDisplay = lead.phone 
-                    ? `<div class="flex items-center gap-2">
-                        <span class="text-slate-700 font-semibold tracking-wide">${lead.phone}</span>
-                        <a href="${waLink}" target="_blank" rel="noopener noreferrer" class="text-emerald-500 hover:text-emerald-600 transition-all transform hover:scale-110 inline-flex items-center" title="WhatsApp">
-                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.03 12.008.03c3.202.001 6.212 1.248 8.477 3.517 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.975-11.953 11.975-2.005-.001-3.973-.504-5.714-1.463L0 24zm6.59-4.846c1.6.95 3.198 1.451 4.811 1.452 5.518 0 10.006-4.486 10.01-10.004.002-2.673-1.03-5.184-2.908-7.065-1.88-1.879-4.383-2.91-7.057-2.911-5.523 0-10.014 4.487-10.018 10.007-.001 1.738.455 3.433 1.32 4.931l-.982 3.584 3.824-.992zm11.085-7.39c-.3-.15-1.77-.874-2.046-.973-.276-.099-.476-.149-.676.15-.2.3-.776.973-.951 1.172-.175.198-.35.223-.65.073-.3-.15-1.265-.467-2.41-1.485-.89-.794-1.49-1.775-1.665-2.073-.175-.3-.019-.462.13-.611.135-.134.3-.3.45-.45.15-.15.2-.25.3-.45.1-.2.05-.375-.025-.525-.075-.15-.676-1.628-.926-2.228-.244-.588-.491-.508-.676-.518-.174-.01-.374-.012-.574-.012-.2 0-.526.075-.801.424-.275.35-1.05 1.024-1.05 2.5s1.075 2.9 1.225 3.1c.15.199 2.113 3.227 5.125 4.527.717.31 1.277.494 1.714.633.721.23 1.377.197 1.896.12.578-.085 1.77-.724 2.02-1.424.25-.7.25-1.3.175-1.425-.075-.125-.275-.199-.575-.349z"/>
-                            </svg>
-                        </a>
-                       </div>`
-                    : '<span class="text-slate-300 italic">No asignado</span>';
-
-                let tableRowHTML = '';
-                
-                if (activeTab === 'leads') {
-                    tableRowHTML = `
-                        <td class="px-6 py-4 text-slate-600 font-medium border-b border-slate-100 whitespace-nowrap">${lead.date || '-'}</td>
-                        <td class="px-6 py-4 border-b border-slate-100 max-w-[250px] break-words whitespace-normal">
-                            <div class="font-bold text-slate-900 text-sm">${lead.name}</div>
-                            ${getInteractionsHTML(lead)}
-                        </td>
-                        <td class="px-6 py-4 text-slate-707 font-semibold tracking-wide border-b border-slate-100 whitespace-nowrap">${phoneDisplay}</td>
-                        <td class="px-6 py-4 border-b border-slate-100 max-w-[200px] break-words whitespace-normal">${filtradoLabel}</td>
-                        <td class="px-6 py-4 text-center border-b border-slate-100 whitespace-nowrap">${statusBadge}</td>
-                        <td class="px-6 py-4 no-print border-b border-slate-100 font-bold">
-                            <div class="flex items-center justify-center gap-2">
-                                <button onclick="openFollowModal(${lead.id}, 'leads')" class="p-1.5 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors inline-flex items-center gap-0.5 font-bold text-[10px]" title="Ver Seguimientos">
-                                    <i data-lucide="message-square" class="w-4 h-4"></i>
-                                    (${lead.followUps ? lead.followUps.length : 0})
-                                </button>
-                                <button onclick="editLead(${lead.id}, 'leads')" class="p-1.5 text-slate-600 hover:bg-slate-100 rounded-lg transition-colors inline-flex" title="Editar">
-                                    <i data-lucide="edit-3" class="w-4 h-4"></i>
-                                </button>
-                                <button onclick="deleteLead(${lead.id}, 'leads')" class="p-1.5 text-rose-600 hover:bg-rose-50 rounded-lg transition-colors inline-flex" title="Eliminar">
-                                    <i data-lucide="trash-2" class="w-4 h-4"></i>
-                                </button>
-                            </div>
-                        </td>
-                    `;
-                } else if (activeTab === 'clientes') {
-                    const ct = lead.clientType || 'Piso';
-                    let ctColor = 'bg-slate-50 text-slate-600 border-slate-200';
-                    if (ct === 'Recompra') ctColor = 'bg-indigo-50 text-indigo-700 border-indigo-200';
-                    else if (ct === 'Referido') ctColor = 'bg-pink-50 text-pink-700 border-pink-200';
-                    else if (ct === 'Llamada') ctColor = 'bg-teal-50 text-teal-700 border-teal-200';
-                    else if (ct === 'Piso') ctColor = 'bg-sky-50 text-sky-700 border-sky-200';
-                    else if (ct === 'Prospección') ctColor = 'bg-fuchsia-50 text-fuchsia-700 border-fuchsia-200';
-
-                    tableRowHTML = `
-                        <td class="px-6 py-4 text-slate-600 font-medium border-b border-slate-100 whitespace-nowrap">${lead.date || '-'}</td>
-                        <td class="px-6 py-4 border-b border-slate-100 max-w-[250px] break-words whitespace-normal">
-                            <div class="font-bold text-slate-900 text-sm">${lead.name}</div>
-                            ${getInteractionsHTML(lead)}
-                        </td>
-                        <td class="px-6 py-4 border-b border-slate-100 whitespace-nowrap">
-                            <span class="px-2.5 py-1 rounded-full text-xs font-semibold border ${ctColor}">${ct}</span>
-                        </td>
-                        <td class="px-6 py-4 text-slate-707 font-semibold tracking-wide border-b border-slate-100 whitespace-nowrap">${phoneDisplay}</td>
-                        <td class="px-6 py-4 border-b border-slate-100 max-w-[200px] break-words whitespace-normal">${filtradoLabel}</td>
-                        <td class="px-6 py-4 text-center border-b border-slate-100 whitespace-nowrap">${statusBadge}</td>
-                        <td class="px-6 py-4 no-print border-b border-slate-100">
-                            <div class="flex items-center justify-center gap-2">
-                                <button onclick="openFollowModal(${lead.id}, 'clientes')" class="p-1.5 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors inline-flex items-center gap-0.5 font-bold text-[10px]" title="Ver Seguimientos">
-                                    <i data-lucide="message-square" class="w-4 h-4"></i>
-                                    (${lead.followUps ? lead.followUps.length : 0})
-                                </button>
-                                <button onclick="editLead(${lead.id}, 'clientes')" class="p-1.5 text-slate-600 hover:bg-slate-100 rounded-lg transition-colors inline-flex" title="Editar">
-                                    <i data-lucide="edit-3" class="w-4 h-4"></i>
-                                </button>
-                                <button onclick="deleteLead(${lead.id}, 'clientes')" class="p-1.5 text-rose-600 hover:bg-rose-50 rounded-lg transition-colors inline-flex" title="Eliminar">
-                                    <i data-lucide="trash-2" class="w-4 h-4"></i>
-                                </button>
-                            </div>
-                        </td>
-                    `;
-                } else if (activeTab === 'facturadas') {
-                    const isLead = !lead.clientType;
-                    const originBadge = isLead 
-                        ? `<span class="px-2.5 py-1 rounded-full text-xs font-semibold border bg-blue-50 text-blue-700 border-blue-200">Prospecto</span>`
-                        : `<span class="px-2.5 py-1 rounded-full text-xs font-semibold border bg-purple-50 text-purple-700 border-purple-200">Cliente (${lead.clientType})</span>`;
-                    const factDate = lead.facturadaDate || lead.date || '-';
-                    const entryDate = lead.date || '-';
-                    const modelName = lead.model && lead.model.trim() !== "" 
-                        ? `<span class="font-semibold text-slate-900 text-xs">${lead.model}</span>`
-                        : `<span class="text-slate-350 italic">No especificado</span>`;
-
-                    tableRowHTML = `
-                        <td class="px-6 py-4 text-slate-600 font-medium border-b border-slate-100 whitespace-nowrap">${entryDate}</td>
-                        <td class="px-6 py-4 text-slate-600 font-medium border-b border-slate-100 whitespace-nowrap">${factDate}</td>
-                        <td class="px-6 py-4 border-b border-slate-100 max-w-[250px] break-words whitespace-normal">
-                            <div class="font-bold text-slate-900 text-sm">${lead.name}</div>
-                        </td>
-                        <td class="px-6 py-4 border-b border-slate-100 max-w-[200px] break-words whitespace-normal">${modelName}</td>
-                        <td class="px-6 py-4 border-b border-slate-100 whitespace-nowrap">${originBadge}</td>
-                    `;
-                }
-
-                const row = document.createElement('tr');
-                row.className = rowClass;
-                row.innerHTML = tableRowHTML;
-                tbody.appendChild(row);
+                modelsListContainer.appendChild(item);
             });
-
-            const paginationEl = document.getElementById('pagination-info');
-            if (paginationEl) {
-                paginationEl.textContent = `Mostrando ${startIndex + 1} a ${endIndex} de ${filteredLeads.length} registros`;
-            }
-            
-            const btnPrev = document.getElementById('btn-prev');
-            const btnNext = document.getElementById('btn-next');
-            if (btnPrev) btnPrev.disabled = currentPage === 1;
-            if (btnNext) btnNext.disabled = endIndex >= filteredLeads.length;
-
-            lucide.createIcons();
         }
 
-        function openLeadModal() {
-            const ent = (activeTab === 'leads' ? 'Lead' : (activeTab === 'clientes' ? 'Cliente' : 'Venta'));
-            const modalTitleEl = document.getElementById('modal-title');
-            
-            if (modalTitleEl) {
-                modalTitleEl.textContent = ("Nuevo " + ent + " GWM (Respaldo)").toUpperCase();
-                modalTitleEl.className = "text-sm md:text-base font-black uppercase tracking-wider text-[#FFF000] drop-shadow-[0_0_8px_#FFF000]";
-            }
+        function renderTableHeaders() {
+            const headerRow = document.getElementById('table-header-row');
+            if (!headerRow) return;
 
-            document.getElementById('form-id').value = "";
-            document.getElementById('form-origin').value = activeTab === 'clientes' ? 'clientes' : 'leads';
-            document.getElementById('form-name').value = "";
-            document.getElementById('form-phone').value = "";
-            document.getElementById('form-email').value = ""; 
-            document.getElementById('form-model').value = "";
-            document.getElementById('form-client-type').value = "Piso";
-            
-            document.getElementById('form-chk-contact').checked = false;
-            document.getElementById('form-chk-cotizacion').checked = false;
-            document.getElementById('form-chk-cita').checked = false;
-            document.getElementById('form-chk-prueba').checked = false;
-            
-            document.getElementById('form-status').value = (activeTab === 'facturadas' ? 'FACTURADA' : 'POR DEFINIR');
-            document.getElementById('form-date').value = new Date().toISOString().substring(0,10);
-            
-            // Inicializar campo dinámico para fecha de facturación
-            const factDateInput = document.getElementById('form-facturada-date');
-            if (factDateInput) factDateInput.value = "";
-            toggleFacturadaDate(document.getElementById('form-status').value);
-
-            const formClientTypeContainer = document.getElementById('form-client-type-container');
-            if (formClientTypeContainer) {
-                if (activeTab === 'clientes') {
-                    formClientTypeContainer.classList.remove('hidden');
-                } else {
-                    formClientTypeContainer.classList.add('hidden');
-                }
-            }
-
-            const modal = document.getElementById('lead-modal');
-            if (modal) modal.classList.remove('hidden');
-        }
-
-        function closeLeadModal() {
-            const modal = document.getElementById('lead-modal');
-            if (modal) modal.classList.add('hidden');
-        }
-
-        function editLead(id, origin) {
-            const targetBase = (origin === 'clientes' ? clientes : leads);
-            const Math_lead = targetBase.find(l => parseInt(l.id) === parseInt(id));
-            if (!Math_lead) return;
-
-            // Iluminar la fila activa de inmediato al editar
-            lastInteractedId = parseInt(id);
-
-            const isLead = origin === 'leads';
-            const ent = isLead ? 'Lead' : 'Cliente';
-            
-            const modalTitleEl = document.getElementById('modal-title');
-            if (modalTitleEl) {
-                modalTitleEl.textContent = ("Editar " + ent + " GWM (Respaldo)").toUpperCase();
-                modalTitleEl.className = "text-sm md:text-base font-black uppercase tracking-wider text-[#FFF000] drop-shadow-[0_0_8px_#FFF000]";
-            }
-
-            document.getElementById('form-id').value = Math_lead.id;
-            document.getElementById('form-origin').value = origin;
-            document.getElementById('form-name').value = Math_lead.name || "";
-            document.getElementById('form-phone').value = Math_lead.phone || "";
-            document.getElementById('form-email').value = Math_lead.email || ""; 
-            document.getElementById('form-model').value = Math_lead.model || "";
-            
-            const formClientTypeContainer = document.getElementById('form-client-type-container');
-            if (formClientTypeContainer) {
-                if (!isLead) {
-                    formClientTypeContainer.classList.remove('hidden');
-                    document.getElementById('form-client-type').value = Math_lead.clientType || "Piso";
-                } else {
-                    formClientTypeContainer.classList.add('hidden');
-                }
-            }
-            
-            document.getElementById('form-date').value = Math_lead.date || "";
-
-            document.getElementById('form-chk-contact').checked = !!Math_lead.contacted;
-            document.getElementById('form-chk-cotizacion').checked = !!Math_lead.cotizacion;
-            document.getElementById('form-chk-cita').checked = !!Math_lead.cita;
-            document.getElementById('form-chk-prueba').checked = !!Math_lead.prueba;
-
-            document.getElementById('form-status').value = Math_lead.status || "POR DEFINIR";
-
-            // Control de campo dinámico "Fecha de Facturación"
-            const factDateInput = document.getElementById('form-facturada-date');
-            if (factDateInput) factDateInput.value = Math_lead.facturadaDate || "";
-            toggleFacturadaDate(Math_lead.status || "POR DEFINIR");
-
-            const modal = document.getElementById('lead-modal');
-            if (modal) modal.classList.remove('hidden');
-            
-            updateDataAndUI();
-        }
-
-        function toggleFacturadaDate(statusValue) {
-            const container = document.getElementById('form-facturada-date-container');
-            if (!container) return;
-            if (statusValue?.toUpperCase() === 'FACTURADA') {
-                container.classList.remove('hidden');
-                const dateInput = document.getElementById('form-facturada-date');
-                if (dateInput && !dateInput.value) {
-                    dateInput.value = new Date().toISOString().substring(0, 10);
-                }
-            } else {
-                container.classList.add('hidden');
-            }
-        }
-
-        function closeFollowModal() {
-            const modal = document.getElementById('follow-modal');
-            if (modal) modal.classList.add('hidden');
-        }
-
-        // Medir y rastrear historial de línea de tiempo con origen e ID independientes
-        function openFollowModal(id, origin) {
-            const targetBase = origin === 'clientes' ? clientes : leads;
-            const item = targetBase.find(l => parseInt(l.id) === parseInt(id));
-            if (!item) return;
-
-            // Iluminar la fila de la última interacción
-            lastInteractedId = parseInt(id);
-
-            document.getElementById('follow-lead-id').value = item.id;
-            document.getElementById('follow-lead-origin').value = origin;
-            const followLeadName = document.getElementById('follow-lead-name');
-            if (followLeadName) followLeadName.textContent = item.name;
-            
-            document.getElementById('follow-comment-input').value = "";
-            document.getElementById('follow-edit-idx').value = "-1"; 
-            
-            const commentLabel = document.getElementById('follow-comment-label');
-            if (commentLabel) commentLabel.textContent = "Nuevo Comentario de Seguimiento";
-            
-            const btnSaveFollow = document.getElementById('btn-save-follow');
-            if (btnSaveFollow) btnSaveFollow.innerHTML = `<i data-lucide="plus" class="w-4 h-4 text-slate-955"></i> Añadir`;
-            
-            renderFollowTimeline(item, origin);
-            const modal = document.getElementById('follow-modal');
-            if (modal) modal.classList.remove('hidden');
-            lucide.createIcons();
-
-            updateDataAndUI();
-        }
-
-        function renderFollowTimeline(lead, origin) {
-            const container = document.getElementById('follow-timeline-container');
-            if (!container) return;
-            container.innerHTML = '';
-
-            if (!lead.followUps || lead.followUps.length === 0) {
-                container.innerHTML = `<p class="text-center text-slate-404 py-6 text-sm font-medium">Sin comentarios de seguimiento.</p>`;
-                return;
-            }
-
-            const sorted = [...lead.followUps].reverse();
-
-            sorted.forEach((item) => {
-                const origIdx = lead.followUps.indexOf(item);
-
-                const itemRow = document.createElement('div');
-                itemRow.className = "flex gap-3 relative pb-4 min-w-0";
-                itemRow.innerHTML = `
-                    <div class="flex flex-col items-center">
-                        <div class="w-2.5 h-2.5 rounded-full bg-amber-500 ring-4 ring-amber-100 z-10 shrink-0"></div>
-                        <div class="w-0.5 h-full bg-slate-200 absolute top-2.5 bottom-0"></div>
-                    </div>
-                    <div class="bg-slate-800 border border-slate-700 p-3.5 rounded-xl flex-grow space-y-1.5 shadow-sm min-w-0 text-white">
-                        <div class="flex justify-between items-center text-xs text-slate-300 flex-wrap gap-2">
-                            <span class="font-extrabold flex items-center gap-1.5">
-                                <i data-lucide="calendar" class="w-4 h-4 text-white"></i>
-                                ${item.date} a las ${item.time}
-                            </span>
-                            <div class="space-x-1.5 font-bold">
-                                <button onclick="editFollowComment(${lead.id}, ${origIdx}, '${origin}')" class="text-blue-300 hover:text-blue-200 transition-colors">Editar</button>
-                                <button onclick="deleteFollowComment(${lead.id}, ${origIdx}, '${origin}')" class="text-rose-404 hover:text-rose-300 transition-colors">Eliminar</button>
-                            </div>
-                        </div>
-                        <p class="text-slate-100 leading-relaxed font-semibold break-words whitespace-normal text-sm">${item.comment}</p>
-                    </div>
+            if (activeTab === 'leads') {
+                headerRow.innerHTML = `
+                    <th class="p-3">FECHA</th>
+                    <th class="p-3">CLIENTE / CONTACTO</th>
+                    <th class="p-3">MODELO INTERÉS</th>
+                    <th class="p-3 text-center">INTERACCIONES</th>
+                    <th class="p-3">ESTADO ACTUAL</th>
+                    <th class="p-3">ÚLTIMO SEGUIMIENTO</th>
+                    <th class="p-3 text-right no-print">ACCIONES</th>
                 `;
-                container.appendChild(itemRow);
-            });
-            lucide.createIcons();
+            } else if (activeTab === 'clientes') {
+                headerRow.innerHTML = `
+                    <th class="p-3">FECHA</th>
+                    <th class="p-3">CLIENTE / CONTACTO</th>
+                    <th class="p-3">TIPO CLIENTE</th>
+                    <th class="p-3">MODELO INTERÉS</th>
+                    <th class="p-3 text-center">INTERACCIONES</th>
+                    <th class="p-3">ESTADO ACTUAL</th>
+                    <th class="p-3">ÚLTIMO SEGUIMIENTO</th>
+                    <th class="p-3 text-right no-print">ACCIONES</th>
+                `;
+            } else if (activeTab === 'facturadas') {
+                headerRow.innerHTML = `
+                    <th class="p-3">FECHA ING.</th>
+                    <th class="p-3">FECHA FACT.</th>
+                    <th class="p-3">ORIGEN</th>
+                    <th class="p-3">CLIENTE / CONTACTO</th>
+                    <th class="p-3">MODELO FACTURADO</th>
+                    <th class="p-3">ESTADO</th>
+                    <th class="p-3">ÚLTIMO SEGUIMIENTO</th>
+                `;
+            }
         }
 
-        async function addFollowComment() {
-            const idVal = parseInt(document.getElementById('follow-lead-id').value);
-            const originVal = document.getElementById('follow-lead-origin').value || 'leads';
-            const commentText = document.getElementById('follow-comment-input').value.trim();
-            const editIdx = parseInt(document.getElementById('follow-edit-idx').value);
-
-            if (!commentText) {
-                showToast("Por favor ingresa un comentario de seguimiento.");
-                return;
-            }
-
-            const targetBase = originVal === 'clientes' ? clientes : leads;
-            const bg_lead = targetBase.find(l => parseInt(l.id) === idVal);
-            if (!bg_lead) return;
-
-            // Mantener iluminada la fila activa
-            lastInteractedId = idVal;
-
-            const now = new Date();
-            const currentDate = now.toISOString().substring(0, 10);
-            const currentTime = now.toTimeString().substring(0, 5);
-
-            if (editIdx === -1) {
-                if (!bg_lead.followUps) bg_lead.followUps = [];
-                bg_lead.followUps.push({
-                    comment: commentText,
-                    date: currentDate,
-                    time: currentTime
-                });
-                showToast("Seguimiento agregado");
-            } else {
-                if (bg_lead.followUps[editIdx]) {
-                    bg_lead.followUps[editIdx].comment = commentText;
-                    bg_lead.followUps[editIdx].date = currentDate;
-                    bg_lead.followUps[editIdx].time = currentTime;
-                }
-                showToast("Seguimiento modificado");
-            }
-
-            await autoSave();
-            document.getElementById('follow-comment-input').value = "";
-            document.getElementById('follow-edit-idx').value = "-1";
-            
-            const commentLabel = document.getElementById('follow-comment-label');
-            if (commentLabel) commentLabel.textContent = "Nuevo Comentario de Seguimiento";
-            
-            const btnSaveFollow = document.getElementById('btn-save-follow');
-            if (btnSaveFollow) btnSaveFollow.innerHTML = `<i data-lucide="plus" class="w-4 h-4 text-slate-955 font-bold"></i> Añadir`;
-
-            renderFollowTimeline(bg_lead, originVal);
+        function handleGlobalYearChange(year) {
             updateDataAndUI();
         }
 
-        // Editar comentario de seguimiento
-        function editFollowComment(leadId, index, origin) {
-            const targetBase = origin === 'clientes' ? clientes : leads;
-            const Math_lead = targetBase.find(l => parseInt(l.id) === parseInt(leadId));
-            if (!Math_lead || !Math_lead.followUps[index]) return;
+        function toggleMonthDropdown(id) {
+            const el = document.getElementById(id);
+            if (el) el.classList.toggle('hidden');
+        }
 
-            // Mantener iluminada la fila activa
-            lastInteractedId = parseInt(leadId);
+        function handleMonthCheckboxChange(val, isChecked) {
+            if (isChecked) {
+                if (!selectedMonths.includes(val)) selectedMonths.push(val);
+            } else {
+                selectedMonths = selectedMonths.filter(m => m !== val);
+            }
 
-            document.getElementById('follow-comment-input').value = Math_lead.followUps[index].comment;
-            document.getElementById('follow-edit-idx').value = index;
-            
-            const commentLabel = document.getElementById('follow-comment-label');
-            if (commentLabel) commentLabel.textContent = "Modificar Comentario de Seguimiento";
-            
-            const btnSaveFollow = document.getElementById('btn-save-follow');
-            if (btnSaveFollow) btnSaveFollow.innerHTML = `<i data-lucide="check" class="w-4 h-4 text-slate-955 font-bold"></i> Guardar`;
-            lucide.createIcons();
-            
+            const checkboxes = document.querySelectorAll('.month-checkbox');
+            checkboxes.forEach(cb => {
+                if (cb.value === val) cb.checked = isChecked;
+            });
+
+            updateMonthLabels();
             updateDataAndUI();
         }
 
-        async function saveLeadForm() {
-            const idVal = document.getElementById('form-id').value;
-            const originVal = document.getElementById('form-origin').value || 'leads';
-            const nameVal = document.getElementById('form-name').value.trim();
-            const phoneVal = document.getElementById('form-phone').value.trim();
-
-            if (!nameVal) {
-                showToast("Por favor, ingresa el nombre.");
-                return;
-            }
-
-            if (!phoneVal) {
-                showToast("Por favor, ingresa el número de celular.");
-                return;
-            }
-
-            const isClientForm = (originVal === 'clientes');
-            const statusVal = document.getElementById('form-status').value;
-            const facturadaDateVal = (statusVal?.toUpperCase() === 'FACTURADA') 
-                ? document.getElementById('form-facturada-date').value 
-                : '';
-
-            const payload = {
-                name: nameVal,
-                phone: phoneVal,
-                email: document.getElementById('form-email').value.trim(), 
-                agent: "Oscar Ayuso", 
-                model: document.getElementById('form-model').value,
-                clientType: isClientForm ? document.getElementById('form-client-type').value : '',
-                source: isClientForm ? document.getElementById('form-client-type').value : 'GWM', 
-                date: document.getElementById('form-date').value,
-                contacted: document.getElementById('form-chk-contact').checked,
-                cotizacion: document.getElementById('form-chk-cotizacion').checked,
-                cita: document.getElementById('form-chk-cita').checked,
-                prueba: document.getElementById('form-chk-prueba').checked,
-                status: statusVal,
-                facturadaDate: facturadaDateVal
-            };
-
-            const targetBase = isClientForm ? clientes : leads;
-
-            if (!idVal) {
-                const cleanNewPhone = phoneVal.replace(/\D/g, '');
-                const cleanNewName = nameVal.trim().toLowerCase();
-
-                const matchingItem = targetBase.find(l => {
-                    const cleanExistPhone = l.phone ? l.phone.replace(/\D/g, '') : '';
-                    const cleanExistName = l.name ? l.name.trim().toLowerCase() : '';
-                    return (cleanNewPhone && cleanExistPhone === cleanNewPhone) || (cleanNewName && cleanExistName === cleanNewName);
-                });
-
-                if (matchingItem) {
-                    showConfirm(`El celular o nombre coincide con "${matchingItem.name}" (${matchingItem.phone || 'Sin cel'}). ¿Deseas actualizar el registro existente con esta nueva información en lugar de crear un duplicado?`, async function() {
-                        const idx = targetBase.findIndex(l => l.id === matchingItem.id);
-                        if (idx !== -1) {
-                            targetBase[idx] = { 
-                                ...targetBase[idx], 
-                                ...payload,
-                                id: matchingItem.id,
-                                followUps: matchingItem.followUps || []
-                            };
-                            lastInteractedId = matchingItem.id;
-                            await autoSave();
-                            closeLeadModal();
-                            updateDataAndUI();
-                            showToast("Registro existente unificado para evitar duplicados.");
-                        }
-                    });
-                    return;
-                }
-            }
-
-            if (idVal) {
-                const idx = targetBase.findIndex(l => parseInt(l.id) === parseInt(idVal));
-                if (idx !== -1) {
-                    targetBase[idx] = { 
-                        ...targetBase[idx], 
-                        ...payload 
-                    };
-                    // Mantener iluminada la fila activa tras editar
-                    lastInteractedId = parseInt(idVal);
-                    showToast("Registro editado correctamente");
-                }
+        function toggleAllMonths(isChecked) {
+            if (isChecked) {
+                selectedMonths = Object.keys(monthNames);
             } else {
-                const uniqueId = Date.now() * 100 + Math.floor(Math.random() * 100);
-                targetBase.push({
-                    id: uniqueId,
-                    ...payload,
-                    followUps: []
-                });
-                // Mantener iluminada la fila del nuevo registro recién creado
-                lastInteractedId = uniqueId;
-                showToast("Nuevo registro creado");
+                selectedMonths = [];
             }
 
-            // ESPERA DE GUARDADO SECUENCIAL ANTES DE ACTUALIZAR PANTALLA
-            await autoSave();
-            closeLeadModal();
+            const checkboxes = document.querySelectorAll('.month-checkbox');
+            checkboxes.forEach(cb => cb.checked = isChecked);
+
+            const selectAlls = document.querySelectorAll('.month-select-all');
+            selectAlls.forEach(sa => sa.checked = isChecked);
+
+            updateMonthLabels();
             updateDataAndUI();
-        }
-
-        function exportToExcel() {
-            if (leads.length === 0 && clientes.length === 0) {
-                showToast("No hay registros para exportar.");
-                return;
-            }
-
-            const wb = XLSX.utils.book_new();
-
-            // Pestaña 1: LEADS
-            const leadsRows = leads.map(l => {
-                const logs = l.followUps ? l.followUps.map(f => `[${f.date} ${f.time}]: ${f.comment}`).join(' | ') : "";
-                return {
-                    "ID Lead": l.id,
-                    "Fecha Ingreso": l.date,
-                    "Fecha Facturación": l.facturadaDate || "",
-                    "Cliente": l.name,
-                    "Celular": l.phone || "",
-                    "Correo Electrónico": l.email || "", 
-                    "Asesor GWM": l.agent,
-                    "Modelo Interés": l.model || "No especificado",
-                    "Contactado (Sí/No)": l.contacted ? "SÍ" : "NO",
-                    "Tiene Cotización": l.cotizacion ? "SÍ" : "NO",
-                    "Tiene Cita": l.cita ? "SÍ" : "NO",
-                    "Prueba de Manejo": l.prueba ? "SÍ" : "NO",
-                    "Estado Actual": l.status,
-                    "Historial Seguimientos": logs
-                };
-            });
-            const wsLeads = XLSX.utils.json_to_sheet(leadsRows);
-            XLSX.utils.book_append_sheet(wb, wsLeads, "LEADS");
-
-            // Pestaña 2: CLIENTES
-            const clientesRows = clientes.map(c => {
-                const logs = c.followUps ? c.followUps.map(f => `[${f.date} ${f.time}]: ${f.comment}`).join(' | ') : "";
-                return {
-                    "ID Cliente": c.id, 
-                    "Fecha Ingreso": c.date,
-                    "Fecha Facturación": c.facturadaDate || "",
-                    "Cliente": c.name,
-                    "Tipo de Cliente": c.clientType || "Piso", 
-                    "Celular": c.phone || "",
-                    "Correo Electrónico": c.email || "", 
-                    "Asesor": "Oscar Ayuso",
-                    "Modelo Interés": c.model || "No especificado",
-                    "Contactado (Sí/No)": c.contacted ? "SÍ" : "NO",
-                    "Tiene Cotización": c.cotizacion ? "SÍ" : "NO",
-                    "Tiene Cita": c.cita ? "SÍ" : "NO",
-                    "Prueba de Manejo": c.prueba ? "SÍ" : "NO",
-                    "Estado Actual": c.status,
-                    "Historial Seguimientos": logs
-                };
-            });
-            const wsClientes = XLSX.utils.json_to_sheet(clientesRows);
-            XLSX.utils.book_append_sheet(wb, wsClientes, "CLIENTES");
-
-            // Pestaña 3: FACTURADAS
-            const facturadasRows = [...leads, ...clientes].filter(l => l.status?.toUpperCase() === 'FACTURADA').map(l => {
-                const logs = l.followUps ? l.followUps.map(f => `[${f.date} ${f.time}]: ${f.comment}`).join(' | ') : "";
-                const isLead = !l.clientType;
-                return {
-                    "Fecha Ingreso": l.date,
-                    "Fecha Facturación": l.facturadaDate || l.date,
-                    "Cliente": l.name,
-                    "Origen": isLead ? "Prospecto (Lead)" : `Cliente (${l.clientType})`,
-                    "Celular": l.phone || "",
-                    "Correo Electrónico": l.email || "", 
-                    "Asesor": "Oscar Ayuso",
-                    "Modelo Interés": l.model || "No especificado",
-                    "Tiene Cotización": l.cotizacion ? "SÍ" : "NO",
-                    "Tiene Cita": l.cita ? "SÍ" : "NO",
-                    "Prueba de Manejo": l.prueba ? "SÍ" : "NO",
-                    "Estado Actual": l.status,
-                    "Historial Seguimientos": logs
-                };
-            });
-            const wsFacturadas = XLSX.utils.json_to_sheet(facturadasRows);
-            XLSX.utils.book_append_sheet(wb, wsFacturadas, "FACTURADAS");
-
-            XLSX.writeFile(wb, "BASE GWM OSCAR (RESPALDO).xlsx");
-            showToast("Excel de respaldo generado con éxito");
-        }
-
-        function convertToPDF() {
-            window.print();
-        }
-
-        // Importar desde Excel
-        function importFromExcel(input) {
-            if (!input.files || input.files.length === 0) return;
-
-            const file = input.files[0];
-            const reader = new FileReader();
-            
-            reader.onload = function(e) {
-                try {
-                    const data = new Uint8Array(e.target.result);
-                    const workbook = XLSX.read(data, { type: 'array' });
-                    
-                    const sheetNames = workbook.SheetNames;
-                    const hasLeads = sheetNames.includes("LEADS");
-                    const hasClientes = sheetNames.includes("CLIENTES");
-
-                    const parseYesNo = (val) => {
-                        if (!val) return false;
-                        const str = String(val).toLowerCase().trim();
-                        return str === 'sí' || str === 'si' || str === 's' || str === 'yes' || str === 'y' || str === 'true' || str === '1';
-                    };
-
-                    const parseFollowUps = (str) => {
-                        if (!str) return [];
-                        const followUps = [];
-                        const parts = String(str).split(' | ');
-                        parts.forEach(part => {
-                            const trimmedPart = part.trim();
-                            if (!trimmedPart) return;
-                            const match = trimmedPart.match(/^\[([\d-]{10})\s+([\d:]{5})\]:\s*(.*)$/);
-                            if (match) {
-                                followUps.push({
-                                    date: match[1],
-                                    time: match[2],
-                                    comment: match[3]
-                                });
-                            } else {
-                                followUps.push({
-                                    date: new Date().toISOString().substring(0, 10),
-                                    time: new Date().toTimeString().substring(0, 5),
-                                    comment: trimmedPart
-                                });
-                            }
-                        });
-                        return followUps;
-                    };
-
-                    const parseSheetData = (worksheet, isClientSheet) => {
-                        const jsonData = XLSX.utils.sheet_to_json(worksheet, { defval: "" });
-                        if (jsonData.length === 0) return [];
-
-                        return jsonData.map((row, idx) => {
-                            const keys = Object.keys(row);
-                            
-                            const getVal = (patterns, excludePatterns = []) => {
-                                const matchedKey = keys.find(k => {
-                                    const lowK = k.toLowerCase();
-                                    const hasPattern = patterns.some(p => lowK.includes(p));
-                                    const hasExclude = excludePatterns.some(p => lowK.includes(p));
-                                    return hasPattern && !hasExclude;
-                                });
-                                return matchedKey ? row[matchedKey] : null;
-                            };
-
-                            const rawId = getVal(['id']) || (Date.now() + idx + Math.floor(Math.random() * 100));
-                            const exclusionsName = ['id', 'num', 'no.', 'n°', 'no ', 'codigo', 'código', 'nume', 'key', 'id '];
-                            const rawName = getVal(['nombre', 'cliente', 'prospecto', 'lead'], exclusionsName) || "Importado #" + (idx + 1);
-                            
-                            const rawPhone = getVal(['celular', 'telefono', 'phone', 'movil', 'cel']) || "";
-                            const rawEmail = getVal(['correo', 'email', 'mail']) || "";
-                            const rawModel = getVal(['modelo', 'unidad', 'vehiculo', 'interes']) || "";
-                            let rawDate = getVal(['fecha', 'registro', 'ingreso', 'creado']) || new Date().toISOString().substring(0,10);
-                            const rawFacturadaDate = getVal(['fecha facturacion', 'fecha facturación', 'facturacion', 'facturado']) || "";
-                            const rawStatus = getVal(['estado', 'status', 'etapa', 'actual']) || "POR DEFINIR";
-                            
-                            if (typeof rawDate === 'number' && rawDate > 20000) {
-                                const dateObj = new Date((rawDate - 25569) * 86400 * 1000);
-                                rawDate = dateObj.toISOString().split('T')[0];
-                            } else if (rawDate instanceof Date) {
-                                rawDate = rawDate.toISOString().split('T')[0];
-                            }
-
-                            const rawContacted = getVal(['contactado']) !== null ? parseYesNo(getVal(['contactado'])) : true;
-                            const rawCotizacion = getVal(['cotizac', 'cotizacion']) !== null ? parseYesNo(getVal(['cotizac', 'cotizacion'])) : false;
-                            const rawCita = getVal(['cita']) !== null ? parseYesNo(getVal(['cita'])) : false;
-                            const rawPrueba = getVal(['prueba', 'manejo']) !== null ? parseYesNo(getVal(['prueba', 'manejo'])) : false;
-                            const rawClientType = getVal(['tipo', 'clienttype']) || "Piso";
-                            
-                            const rawFollowUpsStr = getVal(['historial', 'seguimiento', 'followups']);
-                            const rawFollowUps = parseFollowUps(rawFollowUpsStr);
-
-                            return {
-                                id: parseInt(rawId) || (Date.now() + idx),
-                                name: String(rawName).trim(),
-                                phone: String(rawPhone).trim(),
-                                email: String(rawEmail).trim(),
-                                agent: "Oscar Ayuso",
-                                model: String(rawModel).trim() === "No especificado" ? "" : String(rawModel).trim(),
-                                clientType: isClientSheet ? String(rawClientType).trim() : '',
-                                source: isClientSheet ? String(rawClientType).trim() : 'GWM', 
-                                date: String(rawDate).trim(),
-                                facturadaDate: String(rawFacturadaDate).trim(),
-                                contacted: rawContacted,
-                                cotizacion: rawCotizacion,
-                                cita: rawCita,
-                                prueba: rawPrueba,
-                                status: String(rawStatus).toUpperCase().trim(),
-                                followUps: rawFollowUps
-                            };
-                        });
-                    };
-
-                    let importedAny = false;
-                    let importedLeads = [];
-                    let importedClientes = [];
-
-                    if (hasLeads || hasClientes) {
-                        if (hasLeads) {
-                            importedLeads = parseSheetData(workbook.Sheets["LEADS"], false);
-                            importedAny = true;
-                        }
-                        if (hasClientes) {
-                            importedClientes = parseSheetData(workbook.Sheets["CLIENTES"], true);
-                            importedAny = true;
-                        }
-                    } else {
-                        const firstSheetName = sheetNames[0];
-                        const parsed = parseSheetData(workbook.Sheets[firstSheetName], activeTab === 'clientes');
-                        if (parsed.length > 0) {
-                            if (activeTab === 'leads') importedLeads = parsed;
-                            else if (activeTab === 'clientes') importedClientes = parsed;
-                            importedAny = true;
-                        }
-                    }
-
-                    if (importedAny) {
-                        const mergeData = (existingList, importedList) => {
-                            const merged = [...existingList];
-                            importedList.forEach(importedItem => {
-                                const cleanImportedPhone = importedItem.phone ? importedItem.phone.replace(/\D/g, '') : '';
-                                const cleanImportedName = importedItem.name ? importedItem.name.trim().toLowerCase() : '';
-                                
-                                const matchIdx = merged.findIndex(existingItem => {
-                                    const cleanExistingPhone = existingItem.phone ? existingItem.phone.replace(/\D/g, '') : '';
-                                    const cleanExistingName = existingItem.name ? existingItem.name.trim().toLowerCase() : '';
-                                    
-                                    return (parseInt(existingItem.id) === parseInt(importedItem.id)) || 
-                                           (cleanImportedPhone && cleanExistingPhone === cleanImportedPhone) || 
-                                           (cleanImportedName && cleanExistingName === cleanImportedName);
-                                });
-
-                                if (matchIdx !== -1) {
-                                    const existingItem = merged[matchIdx];
-                                    const mergedItem = {
-                                        ...existingItem,
-                                        ...importedItem,
-                                        id: existingItem.id, // Keep original ID
-                                        name: importedItem.name || existingItem.name,
-                                        phone: importedItem.phone || existingItem.phone,
-                                        email: importedItem.email || existingItem.email,
-                                        model: importedItem.model || existingItem.model,
-                                        date: importedItem.date || existingItem.date,
-                                        facturadaDate: importedItem.facturadaDate || existingItem.facturadaDate,
-                                        status: importedItem.status || existingItem.status,
-                                        contacted: importedItem.contacted || existingItem.contacted,
-                                        cotizacion: importedItem.cotizacion || existingItem.cotizacion,
-                                        cita: importedItem.cita || existingItem.cita,
-                                        prueba: importedItem.prueba || existingItem.prueba,
-                                    };
-
-                                    // Merging comments safely
-                                    const existingFollows = existingItem.followUps || [];
-                                    const importedFollows = importedItem.followUps || [];
-                                    const combinedFollows = [...existingFollows];
-                                    
-                                    importedFollows.forEach(impF => {
-                                        const isDuplicateFollow = combinedFollows.some(existF => 
-                                            existF.comment.trim() === impF.comment.trim() && 
-                                            existF.date === impF.date
-                                        );
-                                        if (!isDuplicateFollow) {
-                                            combinedFollows.push(impF);
-                                        }
-                                    });
-                                    
-                                    mergedItem.followUps = combinedFollows;
-                                    merged[matchIdx] = mergedItem;
-                                } else {
-                                    merged.push(importedItem);
-                                }
-                            });
-                            return merged;
-                        };
-
-                        if (importedLeads.length > 0) {
-                            leads = mergeData(leads, importedLeads);
-                        }
-                        if (importedClientes.length > 0) {
-                            clientes = mergeData(clientes, importedClientes);
-                        }
-
-                        autoSave().then(() => {
-                            showToast("¡Base de datos cargada y fusionada sin duplicados con éxito!");
-                            updateDataAndUI();
-                        });
-                    } else {
-                        showToast("No se encontraron hojas o datos válidos en el archivo.");
-                    }
-                } catch (err) {
-                    console.error("Error al importar el archivo Excel:", err);
-                    showToast("Error crítico al procesar el archivo Excel.");
-                }
-            };
-            reader.readAsArrayBuffer(file);
-        }
-
-        // Compartir enlace autoejecutable
-        function shareDashboardLink() {
-            try {
-                const payload = {
-                    leads: leads,
-                    clientes: clientes
-                };
-                const jsonStr = JSON.stringify(payload);
-                const base64Str = btoa(unescape(encodeURIComponent(jsonStr)));
-                const shareUrl = window.location.origin + window.location.pathname + "?shared=" + base64Str;
-                
-                const tempInput = document.createElement("input");
-                tempInput.value = shareUrl;
-                document.body.appendChild(tempInput);
-                tempInput.select();
-                document.execCommand("copy");
-                document.body.removeChild(tempInput);
-                
-                showToast("¡Enlace del Dashboard copiado al portapapeles!");
-            } catch (e) {
-                console.error("Error al generar enlace para compartir:", e);
-                showToast("Error al codificar los datos para compartir.");
-            }
-        }
-
-        async function autoSave() {
-            try {
-                localStorage.setItem("gwm_leads_data", JSON.stringify(leads));
-                localStorage.setItem("gwm_clientes_data", JSON.stringify(clientes));
-                console.log("Datos locales guardados en caché.");
-            } catch (e) {
-                console.error("Error al escribir en localStorage:", e);
-            }
-
-            if (supabaseClient && currentUser) {
-                const indicator = document.getElementById("cloud-sync-status");
-                if (indicator) {
-                    indicator.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span> Guardando en la nube...`;
-                    indicator.className = "inline-flex items-center gap-1.5 text-[10px] bg-white text-amber-700 border border-slate-200 shadow-sm px-2.5 py-1.5 rounded-full font-bold";
-                }
-
-                try {
-                    // Sincronizar Leads
-                    if (leads.length > 0) {
-                        const sanitizedLeads = leads.map(l => ({
-                            id: parseInt(l.id),
-                            date: l.date || null,
-                            facturadaDate: l.facturadaDate || null,
-                            name: l.name || null,
-                            phone: l.phone || null,
-                            email: l.email || null,
-                            agent: l.agent || "Oscar Ayuso",
-                            model: l.model || null,
-                            contacted: !!l.contacted,
-                            cotizacion: !!l.cotizacion,
-                            cita: !!l.cita,
-                            prueba: !!l.prueba,
-                            status: l.status || "POR DEFINIR",
-                            followUps: l.followUps || []
-                        }));
-
-                        const { error: err1 } = await supabaseClient
-                            .from('gwm_leads')
-                            .upsert(sanitizedLeads, { onConflict: 'id' });
-                        if (err1) throw err1;
-                    }
-
-                    // Sincronizar Clientes
-                    if (clientes.length > 0) {
-                        const sanitizedClientes = clientes.map(c => ({
-                            id: parseInt(c.id),
-                            date: c.date || null,
-                            facturadaDate: c.facturadaDate || null,
-                            name: c.name || null,
-                            phone: c.phone || null,
-                            email: c.email || null,
-                            agent: c.agent || "Oscar Ayuso",
-                            model: c.model || null,
-                            clientType: c.clientType || "Piso",
-                            source: c.source || c.clientType || "GWM",
-                            contacted: !!c.contacted,
-                            cotizacion: !!c.cotizacion,
-                            cita: !!c.cita,
-                            prueba: !!c.prueba,
-                            status: c.status || "POR DEFINIR",
-                            followUps: c.followUps || []
-                        }));
-
-                        const { error: err2 } = await supabaseClient
-                            .from('gwm_clientes')
-                            .upsert(sanitizedClientes, { onConflict: 'id' });
-                        if (err2) throw err2;
-                    }
-
-                    if (indicator) {
-                        indicator.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span> Sincronizado (Nube)`;
-                        indicator.className = "inline-flex items-center gap-1.5 text-[10px] bg-white text-emerald-700 border border-slate-200 shadow-sm px-2.5 py-1.5 rounded-full font-bold";
-                    }
-                } catch (err) {
-                    console.error("Error al sincronizar con Supabase:", err);
-                    if (indicator) {
-                        indicator.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span> Error de Conexión`;
-                        indicator.className = "inline-flex items-center gap-1.5 text-[10px] bg-white text-rose-700 border border-slate-200 shadow-sm px-2.5 py-1.5 rounded-full font-bold";
-                    }
-                    showToast("Error al sincronizar datos en Supabase: " + (err.message || "Problema de red"));
-                }
-            } else if (supabaseClient && !currentUser) {
-                const indicator = document.getElementById("cloud-sync-status");
-                if (indicator) {
-                    indicator.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Modo Local`;
-                    indicator.className = "inline-flex items-center gap-1.5 text-[10px] bg-white text-amber-700 border border-slate-200 shadow-sm px-2.5 py-1.5 rounded-full font-bold";
-                }
-            }
-        }
-
-        function showToast(message) {
-            let toast = document.getElementById('toast-banner');
-            let toastMsg = document.getElementById('toast-message');
-            
-            if (!toast) {
-                toast = document.createElement('div');
-                toast.id = 'toast-banner';
-                toast.className = 'fixed top-24 right-4 z-50 transform translate-x-96 opacity-0 transition-all duration-300 no-print';
-                
-                const innerContainer = document.createElement('div');
-                innerContainer.className = 'bg-slate-900 text-white text-xs font-semibold px-4 py-3 rounded-xl shadow-2xl border border-slate-800 flex items-center gap-2';
-                
-                const pulseCircle = document.createElement('span');
-                pulseCircle.className = 'w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse';
-                
-                toastMsg = document.createElement('span');
-                toastMsg.id = 'toast-message';
-                toastMsg.textContent = message;
-                
-                innerContainer.appendChild(pulseCircle);
-                innerContainer.appendChild(toastMsg);
-                toast.appendChild(innerContainer);
-                document.body.appendChild(toast);
-            } else {
-                if (!toastMsg) {
-                    toastMsg = toast.querySelector('#toast-message') || toast.querySelector('span:last-child');
-                    if (!toastMsg) {
-                        toastMsg = document.createElement('span');
-                        toastMsg.id = 'toast-message';
-                        toast.firstChild.appendChild(toastMsg);
-                    }
-                }
-                toastMsg.textContent = message;
-            }
-            
-            toast.offsetHeight; 
-            toast.classList.remove('translate-x-96', 'opacity-0');
-            
-            setTimeout(() => {
-                toast.classList.add('translate-x-96', 'opacity-0');
-            }, 5000);
-        }
-
-        async function deleteFollowComment(leadId, index, origin) {
-            showConfirm("¿Estás seguro de que deseas eliminar este comentario?", async function() {
-                const targetBase = origin === 'clientes' ? clientes : leads;
-                const lead = targetBase.find(l => parseInt(l.id) === parseInt(leadId));
-                if (lead && lead.followUps) {
-                    lead.followUps.splice(index, 1);
-                    // Mantener iluminada la fila activa tras borrar comentario
-                    lastInteractedId = parseInt(leadId);
-                    showToast("Comentario de historial eliminado");
-                    await autoSave();
-                    renderFollowTimeline(lead, origin);
-                    updateDataAndUI();
-                }
-            });
-        }
-
-        // Definición de la función showConfirm
-        function showConfirm(message, onConfirm) {
-            const modal = document.getElementById('confirm-modal');
-            const msgEl = document.getElementById('confirm-modal-message');
-            if (modal && msgEl) {
-                msgEl.textContent = message;
-                confirmCallback = onConfirm;
-                modal.classList.remove('hidden');
-                lucide.createIcons();
-            }
-        }
-
-        // Cerrar modal confirmación
-        function closeConfirmModal() {
-            const modal = document.getElementById('confirm-modal');
-            if (modal) modal.classList.add('hidden');
-            confirmCallback = null;
-        }
-
-        async function deleteLead(id, origin) {
-            const ent = (origin === 'clientes' ? 'cliente' : 'prospecto');
-            showConfirm("¿Estás seguro de que deseas eliminar este " + ent + "?", async function() {
-                if (supabaseClient && currentUser) {
-                    try {
-                        const targetTable = origin === 'clientes' ? 'gwm_clientes' : 'gwm_leads';
-                        const { error } = await supabaseClient
-                            .from(targetTable)
-                            .delete()
-                            .eq('id', parseInt(id));
-                        if (error) {
-                            console.error("Error al borrar en Supabase:", error);
-                            showToast("Error de Supabase al borrar: " + error.message);
-                        } else {
-                            console.log("Borrado exitoso en la nube.");
-                        }
-                    } catch (err) {
-                        console.error("Error al borrar el registro físicamente de la nube:", err);
-                    }
-                }
-
-                if (origin === 'clientes') {
-                    clientes = clientes.filter(l => parseInt(l.id) !== parseInt(id));
-                } else {
-                    leads = leads.filter(l => parseInt(l.id) !== parseInt(id));
-                }
-
-                await autoSave();
-                showToast("Registro eliminado con éxito.");
-                updateDataAndUI();
-            });
-        }
-
-        function changePage(dir) {
-            const totalPages = Math.ceil(filteredLeads.length / itemsPerPage);
-            const targetPage = currentPage + dir;
-            if (targetPage >= 1 && targetPage <= totalPages) {
-                currentPage = targetPage;
-                renderLeadsTable();
-            }
-        }
-
-        async function saveChanges() {
-            await autoSave();
-            showToast("¡Cambios de respaldo guardados manualmente con éxito!");
-        }
-
-        function executeConfirm() {
-            if (typeof confirmCallback === 'function') {
-                confirmCallback();
-            }
-            closeConfirmModal();
         }
 
         function updateMonthLabels() {
-            let labelText = "Todos los Meses";
-            if (selectedMonths.length > 0) {
-                if (selectedMonths.length === 12) {
-                    labelText = "Todos los Meses";
-                } else if (selectedMonths.length > 2) {
-                    labelText = `${selectedMonths.length} meses selec.`;
-                } else {
-                    const sortedLabels = [...selectedMonths].sort().map(m => monthNames[m].substring(0, 3));
-                    labelText = sortedLabels.join(', ');
-                }
-            } else {
-                labelText = "Ningún mes";
-            }
             const globalLabel = document.getElementById('global-month-label');
             const tableLabel = document.getElementById('table-month-label');
+
+            let labelText = "Todos los Meses";
+
+            if (selectedMonths.length === 0) {
+                labelText = "Ningún Mes";
+            } else if (selectedMonths.length === 1) {
+                labelText = monthNames[selectedMonths[0]] || selectedMonths[0];
+            } else if (selectedMonths.length < 12) {
+                labelText = `${selectedMonths.length} Meses Sel.`;
+            }
+
             if (globalLabel) globalLabel.textContent = labelText;
             if (tableLabel) tableLabel.textContent = labelText;
         }
 
-        function toggleMonthDropdown(menuId) {
-            const el = document.getElementById(menuId);
-            if (!el) return;
-            if (el.classList.contains('hidden')) {
-                const globalMenu = document.getElementById('global-month-dropdown-menu');
-                const tableMenu = document.getElementById('table-month-dropdown-menu');
-                if (globalMenu) globalMenu.classList.add('hidden');
-                if (tableMenu) tableMenu.classList.add('hidden');
-                el.classList.remove('hidden');
-            } else {
-                el.classList.add('hidden');
+        function applySearchAndFilters() {
+            let baseList = [];
+
+            if (activeTab === 'leads') {
+                baseList = leads;
+            } else if (activeTab === 'clientes') {
+                baseList = clientes;
+            } else if (activeTab === 'facturadas') {
+                const fLeads = leads.filter(l => l.status?.toUpperCase() === 'FACTURADA').map(l => ({ ...l, originTab: 'leads' }));
+                const fClientes = clientes.filter(l => l.status?.toUpperCase() === 'FACTURADA').map(l => ({ ...l, originTab: 'clientes' }));
+                baseList = [...fLeads, ...fClientes];
             }
-        }
 
-        function handleGlobalYearChange(yearVal) {
-            currentPage = 1;
-            updateDataAndUI();
-        }
+            const searchText = document.getElementById('lead-search')?.value.toLowerCase().trim() || "";
+            const modelFilter = document.getElementById('filter-model')?.value || "";
+            const statusFilter = document.getElementById('filter-status')?.value || "";
+            const yearFilter = document.getElementById('global-year-filter')?.value || "";
 
-        function handleMonthCheckboxChange(monthVal, checked) {
-            if (checked) {
-                if (!selectedMonths.includes(monthVal)) {
-                    selectedMonths.push(monthVal);
+            filteredLeads = baseList.filter(item => {
+                let matchSearch = true;
+                if (searchText) {
+                    const name = (item.name || "").toLowerCase();
+                    const phone = (item.phone || "").toLowerCase();
+                    const email = (item.email || "").toLowerCase();
+                    matchSearch = name.includes(searchText) || phone.includes(searchText) || email.includes(searchText);
                 }
-            } else {
-                selectedMonths = selectedMonths.filter(m => m !== monthVal);
-            }
-            
-            const checkboxes = document.querySelectorAll(`.month-checkbox[value="${monthVal}"]`);
-            checkboxes.forEach(cb => cb.checked = checked);
-            
-            const selectAlls = document.querySelectorAll('.month-select-all');
-            selectAlls.forEach(sa => sa.checked = (selectedMonths.length === 12));
 
-            updateMonthLabels();
-            currentPage = 1;
-            updateDataAndUI();
-        }
+                let matchModel = true;
+                if (modelFilter && activeTab !== 'facturadas') {
+                    matchModel = (item.model === modelFilter);
+                }
 
-        function toggleAllMonths(checked) {
-            if (checked) {
-                selectedMonths = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
-            } else {
-                selectedMonths = [];
-            }
-            
-            const checkboxes = document.querySelectorAll('.month-checkbox');
-            checkboxes.forEach(cb => cb.checked = checked);
-            
-            const selectAlls = document.querySelectorAll('.month-select-all');
-            selectAlls.forEach(sa => sa.checked = checked);
+                let matchStatus = true;
+                if (statusFilter && activeTab !== 'facturadas') {
+                    matchStatus = ((item.status || "POR DEFINIR").toUpperCase() === statusFilter.toUpperCase());
+                }
 
-            updateMonthLabels();
-            currentPage = 1;
-            updateDataAndUI();
+                let matchMonth = true;
+                if (selectedMonths.length > 0 && selectedMonths.length < 12) {
+                    const dateToUse = (activeTab === 'facturadas' && item.facturadaDate) ? item.facturadaDate : item.date;
+                    if (dateToUse) {
+                        const m = dateToUse.substring(5, 7);
+                        matchMonth = selectedMonths.includes(m);
+                    } else {
+                        matchMonth = false;
+                    }
+                }
+
+                let matchYear = true;
+                if (yearFilter) {
+                    const dateToUse = (activeTab === 'facturadas' && item.facturadaDate) ? item.facturadaDate : item.date;
+                    if (dateToUse) {
+                        const y = dateToUse.substring(0, 4);
+                        matchYear = (y === yearFilter);
+                    } else {
+                        matchYear = false;
+                    }
+                }
+
+                return matchSearch && matchModel && matchStatus && matchMonth && matchYear;
+            });
         }
 
         function handleSearchAndFilters() {
@@ -2879,65 +1681,626 @@
             updateDataAndUI();
         }
 
-        function applySearchAndFilters() {
-            const searchVal = document.getElementById('lead-search').value.toLowerCase();
-            const modelVal = document.getElementById('filter-model').value;
-            const statusVal = document.getElementById('filter-status').value;
-            const yearVal = document.getElementById('global-year-filter').value;
+        function renderLeadsTable() {
+            const tbody = document.getElementById('leads-table-body');
+            if (!tbody) return;
+            tbody.innerHTML = '';
 
-            let activeBase = [];
-            if (activeTab === 'leads') {
-                activeBase = leads;
-            } else if (activeTab === 'clientes') {
-                activeBase = clientes;
-            } else if (activeTab === 'facturadas') {
-                activeBase = [...leads, ...clientes].filter(l => l.status?.toUpperCase() === 'FACTURADA');
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = filteredLeads.slice(start, end);
+
+            const paginationInfo = document.getElementById('pagination-info');
+            if (paginationInfo) {
+                const total = filteredLeads.length;
+                const realEnd = Math.min(end, total);
+                const realStart = total === 0 ? 0 : start + 1;
+                paginationInfo.textContent = `Mostrando ${realStart} a ${realEnd} de ${total} registros`;
             }
 
-            filteredLeads = activeBase.filter(l => {
-                const matchSearch = !searchVal || 
-                    (l.name && l.name.toLowerCase().includes(searchVal)) ||
-                    (l.phone && l.phone.toLowerCase().includes(searchVal));
+            document.getElementById('btn-prev').disabled = (currentPage === 1);
+            document.getElementById('btn-next').disabled = (end >= filteredLeads.length);
 
-                let matchMonth = true;
-                if (selectedMonths.length > 0) {
-                    const dateToEvaluate = (activeTab === 'facturadas' || l.status?.toUpperCase() === 'FACTURADA') ? (l.facturadaDate || l.date) : l.date;
-                    if (dateToEvaluate) {
-                        const r_month = dateToEvaluate.substring(5, 7);
-                        matchMonth = selectedMonths.includes(r_month);
-                    } else {
-                        matchMonth = false;
+            if (pageItems.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="8" class="p-6 text-center text-slate-400 font-semibold">No se encontraron registros.</td></tr>`;
+                return;
+            }
+
+            pageItems.forEach(item => {
+                const tr = document.createElement('tr');
+                const isHighlight = (item.id === lastInteractedId);
+                tr.className = `border-b border-slate-100 hover:bg-slate-50 transition-colors ${isHighlight ? 'row-highlight-active' : ''}`;
+
+                let statusBadge = getStatusBadgeHTML(item.status);
+
+                const lastComment = (item.history && item.history.length > 0) 
+                    ? item.history[item.history.length - 1] 
+                    : null;
+
+                let lastCommentHTML = `<span class="text-slate-400 text-[11px]">Sin comentarios</span>`;
+                if (lastComment) {
+                    lastCommentHTML = `
+                        <div class="max-w-xs truncate" title="${lastComment.text}">
+                            <span class="font-bold text-slate-700 text-xs">${lastComment.text}</span>
+                            <span class="block text-[10px] text-slate-400">${lastComment.date || ''}</span>
+                        </div>
+                    `;
+                }
+
+                if (activeTab === 'leads') {
+                    tr.innerHTML = `
+                        <td class="p-3 font-semibold text-slate-600">${item.date || '-'}</td>
+                        <td class="p-3">
+                            <span class="font-extrabold text-slate-900 block text-xs">${item.name || '-'}</span>
+                            <span class="text-[11px] text-slate-500 block">${item.phone || '-'}</span>
+                            <span class="text-[10px] text-slate-400 block truncate max-w-[150px]">${item.email || ''}</span>
+                        </td>
+                        <td class="p-3 font-bold text-slate-700">${item.model || '-'}</td>
+                        <td class="p-3 text-center">
+                            <div class="flex items-center justify-center gap-1.5">
+                                ${item.contacted ? '<span class="w-2 h-2 rounded-full bg-purple-500" title="Contactado"></span>' : '<span class="w-2 h-2 rounded-full bg-slate-200"></span>'}
+                                ${item.cotizacion ? '<span class="w-2 h-2 rounded-full bg-blue-500" title="Cotización"></span>' : '<span class="w-2 h-2 rounded-full bg-slate-200"></span>'}
+                                ${item.cita ? '<span class="w-2 h-2 rounded-full bg-pink-500" title="Cita"></span>' : '<span class="w-2 h-2 rounded-full bg-slate-200"></span>'}
+                                ${item.prueba ? '<span class="w-2 h-2 rounded-full bg-orange-500" title="Prueba Manejo"></span>' : '<span class="w-2 h-2 rounded-full bg-slate-200"></span>'}
+                            </div>
+                        </td>
+                        <td class="p-3">${statusBadge}</td>
+                        <td class="p-3">${lastCommentHTML}</td>
+                        <td class="p-3 text-right no-print">
+                            <div class="flex items-center justify-end gap-1">
+                                <button onclick="openFollowModal('${item.id}', 'leads')" class="p-1.5 text-amber-600 hover:bg-amber-50 rounded-lg transition-colors" title="Seguimiento">
+                                    <i data-lucide="message-square" class="w-4 h-4"></i>
+                                </button>
+                                <button onclick="openLeadModal('${item.id}', 'leads')" class="p-1.5 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors" title="Editar">
+                                    <i data-lucide="edit-3" class="w-4 h-4"></i>
+                                </button>
+                                <button onclick="confirmDelete('${item.id}', 'leads')" class="p-1.5 text-rose-600 hover:bg-rose-50 rounded-lg transition-colors" title="Eliminar">
+                                    <i data-lucide="trash-2" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </td>
+                    `;
+                } else if (activeTab === 'clientes') {
+                    tr.innerHTML = `
+                        <td class="p-3 font-semibold text-slate-600">${item.date || '-'}</td>
+                        <td class="p-3">
+                            <span class="font-extrabold text-slate-900 block text-xs">${item.name || '-'}</span>
+                            <span class="text-[11px] text-slate-500 block">${item.phone || '-'}</span>
+                            <span class="text-[10px] text-slate-400 block truncate max-w-[150px]">${item.email || ''}</span>
+                        </td>
+                        <td class="p-3">
+                            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-700">${item.clientType || 'Piso'}</span>
+                        </td>
+                        <td class="p-3 font-bold text-slate-700">${item.model || '-'}</td>
+                        <td class="p-3 text-center">
+                            <div class="flex items-center justify-center gap-1.5">
+                                ${item.contacted ? '<span class="w-2 h-2 rounded-full bg-purple-500" title="Contactado"></span>' : '<span class="w-2 h-2 rounded-full bg-slate-200"></span>'}
+                                ${item.cotizacion ? '<span class="w-2 h-2 rounded-full bg-blue-500" title="Cotización"></span>' : '<span class="w-2 h-2 rounded-full bg-slate-200"></span>'}
+                                ${item.cita ? '<span class="w-2 h-2 rounded-full bg-pink-500" title="Cita"></span>' : '<span class="w-2 h-2 rounded-full bg-slate-200"></span>'}
+                                ${item.prueba ? '<span class="w-2 h-2 rounded-full bg-orange-500" title="Prueba Manejo"></span>' : '<span class="w-2 h-2 rounded-full bg-slate-200"></span>'}
+                            </div>
+                        </td>
+                        <td class="p-3">${statusBadge}</td>
+                        <td class="p-3">${lastCommentHTML}</td>
+                        <td class="p-3 text-right no-print">
+                            <div class="flex items-center justify-end gap-1">
+                                <button onclick="openFollowModal('${item.id}', 'clientes')" class="p-1.5 text-amber-600 hover:bg-amber-50 rounded-lg transition-colors" title="Seguimiento">
+                                    <i data-lucide="message-square" class="w-4 h-4"></i>
+                                </button>
+                                <button onclick="openLeadModal('${item.id}', 'clientes')" class="p-1.5 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors" title="Editar">
+                                    <i data-lucide="edit-3" class="w-4 h-4"></i>
+                                </button>
+                                <button onclick="confirmDelete('${item.id}', 'clientes')" class="p-1.5 text-rose-600 hover:bg-rose-50 rounded-lg transition-colors" title="Eliminar">
+                                    <i data-lucide="trash-2" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </td>
+                    `;
+                } else if (activeTab === 'facturadas') {
+                    const originName = item.originTab === 'leads' ? 'LEADS' : 'CLIENTES';
+                    const originColor = item.originTab === 'leads' ? 'bg-cyan-100 text-cyan-800' : 'bg-fuchsia-100 text-fuchsia-800';
+
+                    tr.innerHTML = `
+                        <td class="p-3 font-semibold text-slate-600">${item.date || '-'}</td>
+                        <td class="p-3 font-extrabold text-emerald-600">${item.facturadaDate || item.date || '-'}</td>
+                        <td class="p-3"><span class="px-2 py-0.5 rounded text-[10px] font-black ${originColor}">${originName}</span></td>
+                        <td class="p-3">
+                            <span class="font-extrabold text-slate-900 block text-xs">${item.name || '-'}</span>
+                            <span class="text-[11px] text-slate-500 block">${item.phone || '-'}</span>
+                        </td>
+                        <td class="p-3 font-bold text-slate-800">${item.model || '-'}</td>
+                        <td class="p-3">${statusBadge}</td>
+                        <td class="p-3">${lastCommentHTML}</td>
+                    `;
+                }
+
+                tbody.appendChild(tr);
+            });
+
+            lucide.createIcons();
+        }
+
+        function getStatusBadgeHTML(status) {
+            const st = (status || 'POR DEFINIR').toUpperCase();
+            let colorClasses = "bg-slate-100 text-slate-700 border-slate-300";
+
+            if (st === 'FACTURADA') {
+                return `<span class="px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-emerald-950/80 border border-emerald-500/50 neon-text-neon-green shadow-[0_0_8px_rgba(57,255,20,0.3)]">FACTURADA</span>`;
+            } else if (st === 'SEGUIMIENTO') {
+                colorClasses = "bg-sky-50 text-sky-700 border-sky-200";
+            } else if (st === 'SEGUIMIENTO PROGRAMADO') {
+                colorClasses = "bg-violet-50 text-violet-700 border-violet-200";
+            } else if (st === 'SEGUIMIENTO INTENSO') {
+                colorClasses = "bg-amber-50 text-amber-700 border-amber-200";
+            } else if (st === 'NO CONTESTA') {
+                colorClasses = "bg-fuchsia-50 text-fuchsia-700 border-fuchsia-200";
+            } else if (st === 'NO INTERESADO') {
+                colorClasses = "bg-rose-50 text-rose-700 border-rose-200";
+            } else if (st === 'COMPRO OTRA MARCA') {
+                colorClasses = "bg-red-50 text-red-700 border-red-200";
+            } else if (st === 'PERDIDA') {
+                colorClasses = "bg-stone-100 text-stone-700 border-stone-300";
+            }
+
+            return `<span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider border ${colorClasses}">${st}</span>`;
+        }
+
+        function changePage(direction) {
+            currentPage += direction;
+            renderLeadsTable();
+        }
+
+        function openLeadModal(id = null, origin = null) {
+            const modal = document.getElementById('lead-modal');
+            if (!modal) return;
+
+            const targetOrigin = origin || activeTab;
+            const targetList = targetOrigin === 'leads' ? leads : clientes;
+
+            document.getElementById('form-id').value = id || '';
+            document.getElementById('form-origin').value = targetOrigin;
+
+            const modalTitle = document.getElementById('modal-title');
+            if (modalTitle) {
+                modalTitle.textContent = id 
+                    ? (targetOrigin === 'leads' ? "EDITAR LEAD GWM" : "EDITAR CLIENTE GWM")
+                    : (targetOrigin === 'leads' ? "NUEVO LEAD GWM" : "NUEVO CLIENTE GWM");
+            }
+
+            if (id) {
+                const item = targetList.find(x => x.id === id);
+                if (item) {
+                    document.getElementById('form-name').value = item.name || '';
+                    document.getElementById('form-phone').value = item.phone || '';
+                    document.getElementById('form-email').value = item.email || '';
+                    document.getElementById('form-model').value = item.model || '';
+                    document.getElementById('form-date').value = item.date || new Date().toISOString().split('T')[0];
+                    document.getElementById('form-client-type').value = item.clientType || 'Piso';
+
+                    document.getElementById('form-chk-contact').checked = !!item.contacted;
+                    document.getElementById('form-chk-cotizacion').checked = !!item.cotizacion;
+                    document.getElementById('form-chk-cita').checked = !!item.cita;
+                    document.getElementById('form-chk-prueba').checked = !!item.prueba;
+
+                    const statusVal = item.status || 'POR DEFINIR';
+                    document.getElementById('form-status').value = statusVal;
+                    toggleFacturadaDate(statusVal);
+                    document.getElementById('form-facturada-date').value = item.facturadaDate || new Date().toISOString().split('T')[0];
+                }
+            } else {
+                document.getElementById('form-name').value = '';
+                document.getElementById('form-phone').value = '';
+                document.getElementById('form-email').value = '';
+                document.getElementById('form-model').value = '';
+                document.getElementById('form-date').value = new Date().toISOString().split('T')[0];
+                document.getElementById('form-client-type').value = 'Piso';
+
+                document.getElementById('form-chk-contact').checked = false;
+                document.getElementById('form-chk-cotizacion').checked = false;
+                document.getElementById('form-chk-cita').checked = false;
+                document.getElementById('form-chk-prueba').checked = false;
+
+                document.getElementById('form-status').value = 'POR DEFINIR';
+                toggleFacturadaDate('POR DEFINIR');
+                document.getElementById('form-facturada-date').value = new Date().toISOString().split('T')[0];
+            }
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeLeadModal() {
+            const modal = document.getElementById('lead-modal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function toggleFacturadaDate(status) {
+            const container = document.getElementById('form-facturada-date-container');
+            if (!container) return;
+            if (status === 'FACTURADA') {
+                container.classList.remove('hidden');
+            } else {
+                container.classList.add('hidden');
+            }
+        }
+
+        async function saveLeadForm() {
+            const id = document.getElementById('form-id').value;
+            const origin = document.getElementById('form-origin').value || activeTab;
+
+            const name = document.getElementById('form-name').value.trim();
+            const phone = document.getElementById('form-phone').value.trim();
+            if (!name || !phone) {
+                showToast("El Nombre y Celular son campos obligatorios.");
+                return;
+            }
+
+            const email = document.getElementById('form-email').value.trim();
+            const model = document.getElementById('form-model').value;
+            const date = document.getElementById('form-date').value;
+            const clientType = document.getElementById('form-client-type').value;
+
+            const contacted = document.getElementById('form-chk-contact').checked;
+            const cotizacion = document.getElementById('form-chk-cotizacion').checked;
+            const cita = document.getElementById('form-chk-cita').checked;
+            const prueba = document.getElementById('form-chk-prueba').checked;
+
+            const status = document.getElementById('form-status').value;
+            const facturadaDate = (status === 'FACTURADA') ? document.getElementById('form-facturada-date').value : null;
+
+            const targetList = origin === 'leads' ? leads : clientes;
+            const tableName = origin === 'leads' ? 'gwm_leads' : 'gwm_clientes';
+
+            let updatedItem = null;
+
+            if (id) {
+                const idx = targetList.findIndex(x => x.id === id);
+                if (idx !== -1) {
+                    targetList[idx] = {
+                        ...targetList[idx],
+                        name, phone, email, model, date, clientType,
+                        contacted, cotizacion, cita, prueba,
+                        status, facturadaDate
+                    };
+                    updatedItem = targetList[idx];
+                }
+            } else {
+                const newItem = {
+                    id: 'gwm_' + Date.now(),
+                    name, phone, email, model, date, clientType,
+                    contacted, cotizacion, cita, prueba,
+                    status, facturadaDate,
+                    history: []
+                };
+                targetList.unshift(newItem);
+                updatedItem = newItem;
+            }
+
+            lastInteractedId = updatedItem.id;
+            closeLeadModal();
+            updateDataAndUI();
+
+            if (supabaseClient && currentUser) {
+                try {
+                    const { error } = await supabaseClient
+                        .from(tableName)
+                        .upsert([updatedItem]);
+
+                    if (error) throw error;
+                    showToast("Guardado correctamente en la nube.");
+                } catch (e) {
+                    console.error("Error al guardar en Supabase:", e);
+                    showToast("Guardado en caché local (Error de conexión Nube).");
+                }
+            } else {
+                showToast("Guardado localmente.");
+            }
+
+            localStorage.setItem("gwm_leads_data", JSON.stringify(leads));
+            localStorage.setItem("gwm_clientes_data", JSON.stringify(clientes));
+        }
+
+        function confirmDelete(id, origin) {
+            confirmCallback = () => deleteLead(id, origin);
+            const msg = document.getElementById('confirm-modal-message');
+            if (msg) msg.textContent = "¿Estás seguro de eliminar este registro permanentemente?";
+            const modal = document.getElementById('confirm-modal');
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeConfirmModal() {
+            const modal = document.getElementById('confirm-modal');
+            if (modal) modal.classList.add('hidden');
+            confirmCallback = null;
+        }
+
+        function executeConfirm() {
+            if (confirmCallback) confirmCallback();
+            closeConfirmModal();
+        }
+
+        async function deleteLead(id, origin) {
+            const targetList = origin === 'leads' ? leads : clientes;
+            const tableName = origin === 'leads' ? 'gwm_leads' : 'gwm_clientes';
+
+            const idx = targetList.findIndex(x => x.id === id);
+            if (idx !== -1) {
+                targetList.splice(idx, 1);
+            }
+
+            updateDataAndUI();
+
+            if (supabaseClient && currentUser) {
+                try {
+                    const { error } = await supabaseClient
+                        .from(tableName)
+                        .delete()
+                        .eq('id', id);
+
+                    if (error) throw error;
+                    showToast("Registro eliminado de la nube.");
+                } catch (e) {
+                    console.error("Error al eliminar en Supabase:", e);
+                    showToast("Eliminado de caché local.");
+                }
+            }
+
+            localStorage.setItem("gwm_leads_data", JSON.stringify(leads));
+            localStorage.setItem("gwm_clientes_data", JSON.stringify(clientes));
+        }
+
+        function openFollowModal(id, origin) {
+            const targetList = origin === 'leads' ? leads : clientes;
+            const item = targetList.find(x => x.id === id);
+            if (!item) return;
+
+            document.getElementById('follow-lead-id').value = id;
+            document.getElementById('follow-lead-origin').value = origin;
+            document.getElementById('follow-edit-idx').value = "-1";
+            document.getElementById('follow-comment-input').value = "";
+
+            const nameEl = document.getElementById('follow-lead-name');
+            if (nameEl) nameEl.textContent = `Historial: ${item.name || 'Cliente'}`;
+
+            renderTimeline(item.history || []);
+
+            const modal = document.getElementById('follow-modal');
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeFollowModal() {
+            const modal = document.getElementById('follow-modal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function renderTimeline(history) {
+            const container = document.getElementById('follow-timeline-container');
+            if (!container) return;
+            container.innerHTML = '';
+
+            if (!history || history.length === 0) {
+                container.innerHTML = `<p class="text-center text-slate-500 py-4">Sin historial de interacciones.</p>`;
+                return;
+            }
+
+            [...history].reverse().forEach((h, revIdx) => {
+                const realIdx = history.length - 1 - revIdx;
+                const div = document.createElement('div');
+                div.className = "bg-slate-800 p-3 rounded-xl border border-slate-700 text-white relative flex flex-col gap-1";
+                div.innerHTML = `
+                    <div class="flex items-center justify-between text-[10px] text-amber-400 font-bold">
+                        <span>${h.date || ''}</span>
+                        <div class="flex items-center gap-1">
+                            <button onclick="editFollowComment(${realIdx})" class="p-1 hover:text-white" title="Editar"><i data-lucide="edit-2" class="w-3 h-3"></i></button>
+                            <button onclick="deleteFollowComment(${realIdx})" class="p-1 hover:text-rose-400" title="Eliminar"><i data-lucide="trash" class="w-3 h-3"></i></button>
+                        </div>
+                    </div>
+                    <p class="text-xs font-semibold text-slate-200">${h.text || ''}</p>
+                `;
+                container.appendChild(div);
+            });
+
+            lucide.createIcons();
+        }
+
+        async function addFollowComment() {
+            const id = document.getElementById('follow-lead-id').value;
+            const origin = document.getElementById('follow-lead-origin').value;
+            const text = document.getElementById('follow-comment-input').value.trim();
+            const editIdx = parseInt(document.getElementById('follow-edit-idx').value);
+
+            if (!text) return;
+
+            const targetList = origin === 'leads' ? leads : clientes;
+            const tableName = origin === 'leads' ? 'gwm_leads' : 'gwm_clientes';
+            const item = targetList.find(x => x.id === id);
+            if (!item) return;
+
+            if (!item.history) item.history = [];
+
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('es-MX') + ' ' + now.toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit' });
+
+            if (editIdx >= 0 && editIdx < item.history.length) {
+                item.history[editIdx].text = text;
+            } else {
+                item.history.push({ text, date: dateStr });
+            }
+
+            lastInteractedId = item.id;
+            document.getElementById('follow-comment-input').value = "";
+            document.getElementById('follow-edit-idx').value = "-1";
+
+            renderTimeline(item.history);
+            updateDataAndUI();
+
+            if (supabaseClient && currentUser) {
+                try {
+                    await supabaseClient.from(tableName).upsert([item]);
+                } catch (e) {
+                    console.error("Error al guardar seguimiento:", e);
+                }
+            }
+
+            localStorage.setItem("gwm_leads_data", JSON.stringify(leads));
+            localStorage.setItem("gwm_clientes_data", JSON.stringify(clientes));
+        }
+
+        function editFollowComment(idx) {
+            const id = document.getElementById('follow-lead-id').value;
+            const origin = document.getElementById('follow-lead-origin').value;
+            const targetList = origin === 'leads' ? leads : clientes;
+            const item = targetList.find(x => x.id === id);
+            if (!item || !item.history || !item.history[idx]) return;
+
+            document.getElementById('follow-comment-input').value = item.history[idx].text;
+            document.getElementById('follow-edit-idx').value = idx;
+        }
+
+        async function deleteFollowComment(idx) {
+            const id = document.getElementById('follow-lead-id').value;
+            const origin = document.getElementById('follow-lead-origin').value;
+            const targetList = origin === 'leads' ? leads : clientes;
+            const tableName = origin === 'leads' ? 'gwm_leads' : 'gwm_clientes';
+            const item = targetList.find(x => x.id === id);
+            if (!item || !item.history) return;
+
+            item.history.splice(idx, 1);
+            renderTimeline(item.history);
+            updateDataAndUI();
+
+            if (supabaseClient && currentUser) {
+                try {
+                    await supabaseClient.from(tableName).upsert([item]);
+                } catch (e) {
+                    console.error("Error al eliminar seguimiento:", e);
+                }
+            }
+
+            localStorage.setItem("gwm_leads_data", JSON.stringify(leads));
+            localStorage.setItem("gwm_clientes_data", JSON.stringify(clientes));
+        }
+
+        async function saveChanges() {
+            if (!supabaseClient || !currentUser) {
+                showToast("Acceso no autenticado.");
+                return;
+            }
+
+            try {
+                showToast("Sincronizando cambios con la nube...");
+                if (leads.length > 0) {
+                    await supabaseClient.from('gwm_leads').upsert(leads);
+                }
+                if (clientes.length > 0) {
+                    await supabaseClient.from('gwm_clientes').upsert(clientes);
+                }
+                showToast("¡Todos los cambios guardados con éxito en la nube!");
+            } catch (e) {
+                console.error("Error guardando datos:", e);
+                showToast("Error al guardar en la nube.");
+            }
+        }
+
+        function exportToExcel() {
+            const dataToExport = filteredLeads.map(item => ({
+                "Fecha": item.date || '',
+                "Cliente": item.name || '',
+                "Teléfono": item.phone || '',
+                "Email": item.email || '',
+                "Tipo Cliente": item.clientType || '',
+                "Modelo": item.model || '',
+                "Contactado": item.contacted ? 'SÍ' : 'NO',
+                "Cotización": item.cotizacion ? 'SÍ' : 'NO',
+                "Cita": item.cita ? 'SÍ' : 'NO',
+                "Prueba Manejo": item.prueba ? 'SÍ' : 'NO',
+                "Estado": item.status || '',
+                "Fecha Facturación": item.facturadaDate || '',
+                "Último Seguimiento": (item.history && item.history.length > 0) ? item.history[item.history.length - 1].text : ''
+            }));
+
+            const ws = XLSX.utils.json_to_sheet(dataToExport);
+            const wb = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(wb, ws, activeTab.toUpperCase());
+            XLSX.writeFile(wb, `GWM_${activeTab.toUpperCase()}_${new Date().toISOString().split('T')[0]}.xlsx`);
+        }
+
+        function importFromExcel(input) {
+            const file = input.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = async function(e) {
+                const data = new Uint8Array(e.target.result);
+                const workbook = XLSX.read(data, { type: 'array' });
+                const firstSheetName = workbook.SheetNames[0];
+                const worksheet = workbook.Sheets[firstSheetName];
+                const json = XLSX.utils.sheet_to_json(worksheet);
+
+                const targetList = activeTab === 'leads' ? leads : clientes;
+                const tableName = activeTab === 'leads' ? 'gwm_leads' : 'gwm_clientes';
+
+                const importedItems = json.map((row, idx) => ({
+                    id: 'gwm_imp_' + Date.now() + '_' + idx,
+                    name: row['Cliente'] || row['Nombre'] || 'Sin Nombre',
+                    phone: String(row['Teléfono'] || row['Telefono'] || row['Celular'] || ''),
+                    email: row['Email'] || row['Correo'] || '',
+                    model: row['Modelo'] || '',
+                    date: row['Fecha'] || new Date().toISOString().split('T')[0],
+                    clientType: row['Tipo Cliente'] || 'Piso',
+                    contacted: String(row['Contactado'] || '').toUpperCase() === 'SÍ',
+                    cotizacion: String(row['Cotización'] || row['Cotizacion'] || '').toUpperCase() === 'SÍ',
+                    cita: String(row['Cita'] || '').toUpperCase() === 'SÍ',
+                    prueba: String(row['Prueba Manejo'] || row['Prueba'] || '').toUpperCase() === 'SÍ',
+                    status: (row['Estado'] || 'POR DEFINIR').toUpperCase(),
+                    facturadaDate: row['Fecha Facturación'] || null,
+                    history: row['Último Seguimiento'] ? [{ text: row['Último Seguimiento'], date: new Date().toLocaleDateString('es-MX') }] : []
+                }));
+
+                targetList.push(...importedItems);
+                updateDataAndUI();
+
+                if (supabaseClient && currentUser) {
+                    try {
+                        await supabaseClient.from(tableName).upsert(importedItems);
+                        showToast(`Importados ${importedItems.length} registros a la nube.`);
+                    } catch (err) {
+                        console.error("Error importando:", err);
+                        showToast("Importados localmente (Error en la nube).");
                     }
                 }
 
-                let matchYear = true;
-                if (yearVal) {
-                    const dateToEvaluate = (activeTab === 'facturadas' || l.status?.toUpperCase() === 'FACTURADA') ? (l.facturadaDate || l.date) : l.date;
-                    if (dateToEvaluate) {
-                        const r_year = dateToEvaluate.substring(0, 4);
-                        matchYear = (r_year === yearVal);
-                    } else {
-                        matchYear = false;
-                    }
-                }
+                localStorage.setItem("gwm_leads_data", JSON.stringify(leads));
+                localStorage.setItem("gwm_clientes_data", JSON.stringify(clientes));
+            };
+            reader.readAsArrayBuffer(file);
+        }
 
-                const matchModel = !modelVal || (l.model === modelVal);
-                const matchStatus = !statusVal || (l.status === statusVal);
+        function convertToPDF() {
+            window.print();
+        }
 
-                return matchSearch && matchMonth && matchYear && matchModel && matchStatus;
-            });
+        function shareDashboardLink() {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(window.location.href);
+                showToast("Enlace copiado al portapapeles.");
+            } else {
+                showToast("No se pudo copiar el enlace.");
+            }
+        }
 
-            filteredLeads.sort((a, b) => {
-                if (activeTab === 'facturadas') {
-                    const dateA = a.facturadaDate || a.date || "";
-                    const dateB = b.facturadaDate || b.date || "";
-                    return dateB.localeCompare(dateA) || (b.id - a.id);
-                } else {
-                    const dateA = a.date || "";
-                    const dateB = b.date || "";
-                    return dateB.localeCompare(dateA) || (b.id - a.id);
-                }
-            });
+        function showToast(msg) {
+            let toast = document.getElementById('custom-toast');
+            if (!toast) {
+                toast = document.createElement('div');
+                toast.id = 'custom-toast';
+                toast.className = 'fixed bottom-5 right-5 z-[200] bg-slate-900 text-white font-bold text-xs px-4 py-3 rounded-xl shadow-2xl border border-slate-700 transition-all duration-300 transform translate-y-10 opacity-0';
+                document.body.appendChild(toast);
+            }
+            toast.textContent = msg;
+            toast.classList.remove('translate-y-10', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-10', 'opacity-0');
+            }, 3000);
         }
     </script>
 </body>
