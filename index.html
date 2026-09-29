@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESPALDO GESTION DE LEADS - OSCAR AYUSO GWM</title>
+    <title> GESTION DE LEADS - OSCAR AYUSO GWM</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Chart.js -->
@@ -146,7 +146,7 @@
                     <i data-lucide="lock" class="w-6 h-6"></i>
                 </div>
                 <h3 class="text-lg font-black text-white uppercase tracking-wider text-cyan-400 drop-shadow-[0_0_5px_#00F0FF] font-bold">Acceso de Respaldo GWM</h3>
-                <p class="text-[11px] text-slate-404 mt-1">Ingresa tus credenciales autorizadas para acceder al Dashboard de Respaldo.</p>
+                <p class="text-[11px] text-slate-404 mt-1">Ingresa tus credenciales autorizadas para acceder al Dashboard.</p>
             </div>
             <form id="login-form" onsubmit="handleLoginSubmit(event)" class="p-6 space-y-4 text-xs">
                 <div>
@@ -160,7 +160,7 @@
                 <div id="login-error-msg" class="text-rose-500 font-bold hidden text-[11px] text-center bg-rose-950/20 py-2 rounded-lg border border-rose-900/30"></div>
                 
                 <button type="submit" class="w-full py-3 bg-gradient-to-r from-cyan-500 to-indigo-500 hover:from-cyan-600 hover:to-indigo-600 text-slate-955 font-black rounded-xl transition-all shadow-md shadow-cyan-500/25 uppercase tracking-wider">
-                    Conectar Base de Datos (Respaldo)
+                    Conectar Base de Datos.
                 </button>
             </form>
         </div>
@@ -1913,7 +1913,7 @@ container.className = "space-y-4 w-full animate-none";
             const modalTitleEl = document.getElementById('modal-title');
             
             if (modalTitleEl) {
-                modalTitleEl.textContent = ("Nuevo " + ent + " GWM (Respaldo)").toUpperCase();
+                modalTitleEl.textContent = ("Nuevo " + ent + " GWM").toUpperCase();
                 modalTitleEl.className = "text-sm md:text-base font-black uppercase tracking-wider text-[#FFF000] drop-shadow-[0_0_8px_#FFF000]";
             }
 
@@ -1969,7 +1969,7 @@ container.className = "space-y-4 w-full animate-none";
             
             const modalTitleEl = document.getElementById('modal-title');
             if (modalTitleEl) {
-                modalTitleEl.textContent = ("Editar " + ent + " GWM (Respaldo)").toUpperCase();
+                modalTitleEl.textContent = ("Editar " + ent + " GWM ").toUpperCase();
                 modalTitleEl.className = "text-sm md:text-base font-black uppercase tracking-wider text-[#FFF000] drop-shadow-[0_0_8px_#FFF000]";
             }
 
@@ -2355,7 +2355,7 @@ container.className = "space-y-4 w-full animate-none";
             const wsFacturadas = XLSX.utils.json_to_sheet(facturadasRows);
             XLSX.utils.book_append_sheet(wb, wsFacturadas, "FACTURADAS");
 
-            XLSX.writeFile(wb, "BASE GWM OSCAR (RESPALDO).xlsx");
+            XLSX.writeFile(wb, "BASE GWM OSCAR.xlsx");
             showToast("Excel de respaldo generado con éxito");
         }
 
