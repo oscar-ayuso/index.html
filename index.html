@@ -1099,75 +1099,84 @@
                 const facturadas = filteredLeads.filter(l => l.status?.toUpperCase() === 'FACTURADA').length;
                 const facturadasPct = total > 0 ? Math.round((facturadas / total) * 100) : 0;
 
-                container.className = "space-y-4 w-full animate-none";
-container.innerHTML = `
-    <div class="flex justify-center w-full no-print">
-                    <div class="flex justify-center w-full no-print">
-                        <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border-2 border-[#39FF14] hover:shadow-md hover:shadow-[#39FF14]/25 shadow-[0_0_15px_rgba(57,255,20,0.2)] print-card text-white w-full max-w-xs flex flex-col items-center justify-center text-center h-[125px]">
-                            <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#39FF14] drop-shadow-[0_0_5px_#39FF14] mb-1">
-                                <i data-lucide="check-square" class="w-5 h-5"></i>
+container.className = "space-y-4 w-full animate-none";
+            container.innerHTML = `
+                <!-- TÍTULO DE LA SECCIÓN -->
+                <div class="no-print mb-2">
+                    <h3 class="text-xl md:text-2xl font-black uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-404 via-teal-350 to-emerald-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.6)] flex items-center gap-2">
+                        <i data-lucide="activity" class="w-5 h-5 text-cyan-404 animate-pulse"></i>
+                        MEDICION DE LEADS 
+                    </h3>
+                </div>
+
+                <!-- 1. CUADRO PRINCIPAL (FACTURADAS) CENTRADO -->
+                <div class="flex justify-center w-full no-print">
+                    <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border-2 border-[#39FF14] hover:shadow-md hover:shadow-[#39FF14]/25 shadow-[0_0_15px_rgba(57,255,20,0.2)] print-card text-white w-full max-w-xs flex flex-col items-center justify-center text-center h-[125px]">
+                        <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#39FF14] drop-shadow-[0_0_5px_#39FF14] mb-1">
+                            <i data-lucide="check-square" class="w-5 h-5"></i>
+                        </div>
+                        <span class="text-xs font-black uppercase tracking-wider text-[#39FF14] drop-shadow-[0_0_5px_#39FF14]">Facturadas</span>
+                        <div class="flex items-center justify-center gap-2 mt-1">
+                            <span class="text-3xl font-black text-white tracking-tight">${facturadas}</span>
+                            <span class="text-xs font-bold text-[#39FF14] bg-emerald-950/40 border border-emerald-900/30 px-2 py-0.5 rounded-full font-black">(${facturadasPct}%)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. REJILLA DE 6 CUADROS DE KPIS (DISTRIBUIDOS A LO ANCHO) -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                    <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-cyan-500/25 shadow-[0_0_15px_rgba(34,211,238,0.1)] transition-all duration-300 print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center">
+                        <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#00F0FF] drop-shadow-[0_0_6px_#00F0FF] mb-1"><i data-lucide="users" class="w-5 h-5"></i></div>
+                        <span class="text-xs font-black uppercase tracking-wider text-[#00F0FF] drop-shadow-[0_0_6px_#00F0FF]">Leads Totales</span>
+                        <span class="text-3xl font-black text-white tracking-tight mt-1">${total}</span>
+                    </div>
+
+                    <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-[#c98c7d]/25 shadow-[0_0_15px_rgba(147,105,93,0.1)] transition-all duration-300 print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center">
+                        <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#c98c7d] drop-shadow-[0_0_4px_rgba(147,105,93,0.5)] mb-1"><i data-lucide="phone-call" class="w-5 h-5"></i></div>
+                        <span class="text-xs font-black uppercase tracking-wider text-[#c98c7d] drop-shadow-[0_0_4px_rgba(147,105,93,0.5)]">Contactados</span>
+                        <span class="text-3xl font-black text-white tracking-tight mt-1">${contactados}</span>
+                    </div>
+
+                    <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-slate-500/25 shadow-[0_0_15px_rgba(148,163,184,0.1)] print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center">
+                        <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#94a3b8] drop-shadow-[0_0_6px_#94a3b8] mb-1"><i data-lucide="filter" class="w-5 h-5"></i></div>
+                        <span class="text-xs font-black uppercase tracking-wider text-[#94a3b8] drop-shadow-[0_0_6px_#94a3b8] truncate">Filtrados</span>
+                        <div class="mt-2 grid grid-cols-2 gap-1 border-t border-slate-800 pt-2 w-full">
+                            <div class="text-center border-r border-slate-800">
+                                <span class="block text-[8px] font-bold text-slate-404 uppercase tracking-wider">Sí</span>
+                                <span class="text-xl font-black text-white leading-none">${filtradosSi}</span>
                             </div>
-                            <span class="text-xs font-black uppercase tracking-wider text-[#39FF14] drop-shadow-[0_0_5px_#39FF14]">Facturadas</span>
-                            <div class="flex items-center justify-center gap-2 mt-1">
-                                <span class="text-3xl font-black text-white tracking-tight">${facturadas}</span>
-                                <span class="text-xs font-bold text-[#39FF14] bg-emerald-950/40 border border-emerald-900/30 px-2 py-0.5 rounded-full font-black">(${facturadasPct}%)</span>
+                            <div class="text-center">
+                                <span class="block text-[8px] font-bold text-slate-500 uppercase tracking-wider">No</span>
+                                <span class="text-xl font-black text-white leading-none">${filtradosNo}</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-                        <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-cyan-500/25 shadow-[0_0_15px_rgba(34,211,238,0.1)] transition-all duration-300 print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center">
-                            <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#00F0FF] drop-shadow-[0_0_6px_#00F0FF] mb-1"><i data-lucide="users" class="w-5 h-5"></i></div>
-                            <span class="text-xs font-black uppercase tracking-wider text-[#00F0FF] drop-shadow-[0_0_6px_#00F0FF]">Leads Totales</span>
-                            <span class="text-3xl font-black text-white tracking-tight mt-1">${total}</span>
-                        </div>
+                    <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-purple-500/25 shadow-[0_0_15px_rgba(168,85,247,0.15)] print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center">
+                        <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#a78bfa] drop-shadow-[0_0_6px_a78bfa] mb-1"><i data-lucide="file-spreadsheet" class="w-5 h-5"></i></div>
+                        <span class="text-xs font-black uppercase tracking-wider text-[#a78bfa] drop-shadow-[0_0_6px_#a78bfa]">Cotización</span>
+                        <span class="text-3xl font-black text-white tracking-tight mt-1">${cotizaciones}</span>
+                    </div>
 
-                        <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-[#c98c7d]/25 shadow-[0_0_15px_rgba(147,105,93,0.1)] transition-all duration-300 print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center">
-                            <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#c98c7d] drop-shadow-[0_0_4px_rgba(147,105,93,0.5)] mb-1"><i data-lucide="phone-call" class="w-5 h-5"></i></div>
-                            <span class="text-xs font-black uppercase tracking-wider text-[#c98c7d] drop-shadow-[0_0_4px_rgba(147,105,93,0.5)]">Contactados</span>
-                            <span class="text-3xl font-black text-white tracking-tight mt-1">${contactados}</span>
-                        </div>
-
-                        <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-slate-500/25 shadow-[0_0_15px_rgba(148,163,184,0.1)] print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center">
-                            <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#94a3b8] drop-shadow-[0_0_6px_#94a3b8] mb-1"><i data-lucide="filter" class="w-5 h-5"></i></div>
-                            <span class="text-xs font-black uppercase tracking-wider text-[#94a3b8] drop-shadow-[0_0_6px_#94a3b8] truncate">Filtrados</span>
-                            <div class="mt-2 grid grid-cols-2 gap-1 border-t border-slate-800 pt-2 w-full">
-                                <div class="text-center border-r border-slate-800">
-                                    <span class="block text-[8px] font-bold text-slate-404 uppercase tracking-wider">Sí</span>
-                                    <span class="text-xl font-black text-white leading-none">${filtradosSi}</span>
-                                </div>
-                                <div class="text-center">
-                                    <span class="block text-[8px] font-bold text-slate-500 uppercase tracking-wider">No</span>
-                                    <span class="text-xl font-black text-white leading-none">${filtradosNo}</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-purple-500/25 shadow-[0_0_15px_rgba(168,85,247,0.15)] print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center">
-                            <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#a78bfa] drop-shadow-[0_0_6px_#a78bfa] mb-1"><i data-lucide="file-spreadsheet" class="w-5 h-5"></i></div>
-                            <span class="text-xs font-black uppercase tracking-wider text-[#a78bfa] drop-shadow-[0_0_6px_#a78bfa]">Cotización</span>
-                            <span class="text-3xl font-black text-white tracking-tight mt-1">${cotizaciones}</span>
-                        </div>
-
-                        <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-pink-500/25 shadow-[0_0_15px_rgba(244,114,182,0.1)] print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center">
-                            <div class="p-1.5 rounded-lg bg-slate-955 text-[#f472b6] drop-shadow-[0_0_6px_#f472b6] mb-1"><i data-lucide="calendar" class="w-5 h-5"></i></div>
-                            <span class="text-xs font-black uppercase tracking-wider text-[#f472b6] drop-shadow-[0_0_6px_#f472b6]">Cita</span>
-                            <div class="mt-2 flex items-baseline justify-center gap-2 w-full">
-                                <span class="text-3xl font-black text-white tracking-tight">${citas}</span>
-                                <span class="text-xs font-bold text-[#f472b6] drop-shadow-[0_0_6px_#f472b6] bg-pink-950/50 border border-pink-800/40 px-2 py-0.5 rounded-full font-black">(${citasPct}%)</span>
-                            </div>
-                        </div>
-
-                        <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 shadow-[0_0_15px_rgba(255,107,0,0.15)] hover:shadow-md hover:shadow-[#FF6B00]/25 print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center">
-                            <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#FF6B00] drop-shadow-[0_0_6px_#FF6B00] mb-1"><i data-lucide="car" class="w-5 h-5"></i></div>
-                            <span class="text-xs font-black uppercase tracking-wider text-[#FF6B00] drop-shadow-[0_0_6px_#FF6B00]">Prueba de Manejo</span>
-                            <div class="mt-2 flex items-baseline justify-center gap-2 w-full">
-                                <span class="text-3xl font-black text-white tracking-tight">${pruebas}</span>
-                                <span class="text-xs font-bold text-[#FF6B00] drop-shadow-[0_0_6px_#FF6B00] bg-orange-950/50 border border-orange-800/40 px-2 py-0.5 rounded-full font-black">(${pruebasPct}%)</span>
-                            </div>
+                    <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 hover:shadow-md hover:shadow-pink-500/25 shadow-[0_0_15px_rgba(244,114,182,0.1)] print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center">
+                        <div class="p-1.5 rounded-lg bg-slate-955 text-[#f472b6] drop-shadow-[0_0_6px_#f472b6] mb-1"><i data-lucide="calendar" class="w-5 h-5"></i></div>
+                        <span class="text-xs font-black uppercase tracking-wider text-[#f472b6] drop-shadow-[0_0_6px_#f472b6]">Cita</span>
+                        <div class="mt-2 flex items-baseline justify-center gap-2 w-full">
+                            <span class="text-3xl font-black text-white tracking-tight">${citas}</span>
+                            <span class="text-xs font-bold text-[#f472b6] drop-shadow-[0_0_6px_#f472b6] bg-pink-950/50 border border-pink-800/40 px-2 py-0.5 rounded-full font-black">(${citasPct}%)</span>
                         </div>
                     </div>
-                `;
+
+                    <div class="relative bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-950 p-4 rounded-xl border border-slate-800 shadow-[0_0_15px_rgba(255,107,0,0.15)] hover:shadow-md hover:shadow-[#FF6B00]/25 print-card text-white min-h-[125px] flex flex-col items-center justify-center text-center">
+                        <div class="p-1.5 rounded-lg bg-slate-955/40 text-[#FF6B00] drop-shadow-[0_0_6px_#FF6B00] mb-1"><i data-lucide="car" class="w-5 h-5"></i></div>
+                        <span class="text-xs font-black uppercase tracking-wider text-[#FF6B00] drop-shadow-[0_0_6px_#FF6B00]">Prueba de Manejo</span>
+                        <div class="mt-2 flex items-baseline justify-center gap-2 w-full">
+                            <span class="text-3xl font-black text-white tracking-tight">${pruebas}</span>
+                            <span class="text-xs font-bold text-[#FF6B00] drop-shadow-[0_0_6px_#FF6B00] bg-orange-950/50 border border-orange-800/40 px-2 py-0.5 rounded-full font-black">(${pruebasPct}%)</span>
+                        </div>
+                    </div>
+                </div>
+            `;
             } else if (activeTab === 'clientes') {
                 if (titleContainer) {
                     titleContainer.innerHTML = `
