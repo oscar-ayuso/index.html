@@ -518,6 +518,7 @@
                             <option value="Recompra" class="bg-slate-955 text-white">Recompra</option>
                             <option value="Plaza La Isla" class="bg-slate-955 text-white">Plaza La Isla</option>
                             <option value="Autoshow" class="bg-slate-955 text-white">Autoshow</option>
+							<option value="Caravana GWM" class="bg-slate-955 text-white">Caravana GWM</option>
                         </select>
                     </div>
 
@@ -1190,7 +1191,7 @@ container.className = "space-y-4 w-full animate-none";
                 const cotizaciones = filteredLeads.filter(l => l.cotizacion).length;
                 const pruebas = filteredLeads.filter(l => l.prueba).length;
                 const piso = filteredLeads.filter(l => l.clientType === "Piso").length;
-                const prospeccion = filteredLeads.filter(l => l.clientType === "Prospección" || l.clientType === "Plaza La Isla" || l.clientType === "Autoshow").length;
+                const prospeccion = filteredLeads.filter(l => l.clientType === "Prospección" || l.clientType === "Caravana GWM" || l.clientType === "Plaza La Isla" || l.clientType === "Autoshow").length;
                 const llamada = filteredLeads.filter(l => l.clientType === "Llamada").length;
                 const referido = filteredLeads.filter(l => l.clientType === "Referido").length;
                 const recompra = filteredLeads.filter(l => l.clientType === "Recompra").length;
