@@ -508,9 +508,9 @@
                         <input type="text" id="form-name" class="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-lg text-white font-semibold focus:outline-none focus:ring-1 focus:ring-sky-500">
                     </div>
 
-                    <div id="form-client-type-container" class="hidden">
+                 <div id="form-client-type-container" class="hidden">
                         <label class="block font-black text-[#00F0FF] drop-shadow-[0_0_5px_#00F0FF] uppercase tracking-wider text-[10px] mb-1">Tipo de Cliente *</label>
-                        <select id="form-client-type" class="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-lg text-white font-semibold focus:outline-none focus:ring-1 focus:ring-sky-500">
+                        <select id="form-client-type" onchange="toggleProspeccionDetail(this.value)" class="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-lg text-white font-semibold focus:outline-none focus:ring-1 focus:ring-sky-500">
                             <option value="Piso" class="bg-slate-955 text-white">Piso</option>
                             <option value="Prospección" class="bg-slate-955 text-white">Prospección</option>
                             <option value="Llamada" class="bg-slate-955 text-white">Llamada</option>
@@ -520,6 +520,12 @@
                             <option value="Autoshow" class="bg-slate-955 text-white">Autoshow</option>
 							<option value="Caravana GWM" class="bg-slate-955 text-white">Caravana GWM</option>
                         </select>
+                    </div>
+
+                    <!-- NUEVO CAMPO DINÁMICO PARA LUGAR/DETALLE DE PROSPECCIÓN -->
+                    <div id="form-prospeccion-detail-container" class="hidden">
+                        <label class="block font-black text-[#A855F7] drop-shadow-[0_0_5px_#A855F7] uppercase tracking-wider text-[10px] mb-1">¿Dónde Prospectaste? *</label>
+                        <input type="text" id="form-prospeccion-detail" placeholder="Ej. Plaza Altabrisa, Facebook, Expo..." class="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-lg text-white font-semibold focus:outline-none focus:ring-1 focus:ring-purple-500">
                     </div>
 
                     <div>
@@ -1832,6 +1838,7 @@ container.className = "space-y-4 w-full animate-none";
                             </div>
                         </td>
                     `;
+   ```javascript
                 } else if (activeTab === 'clientes') {
                     const ct = lead.clientType || 'Piso';
                     let ctColor = 'bg-slate-50 text-slate-600 border-slate-200';
@@ -1841,6 +1848,17 @@ container.className = "space-y-4 w-full animate-none";
                     else if (ct === 'Piso') ctColor = 'bg-sky-50 text-sky-700 border-sky-200';
                     else if (ct === 'Prospección') ctColor = 'bg-fuchsia-50 text-fuchsia-700 border-fuchsia-200';
 
+                    // Lógica para mostrar la doble burbuja en Prospección
+                    let clientTypeBadges = `<span class="px-2.5 py-1 rounded-full text-xs font-semibold border ${ctColor}">${ct}</span>`;
+                    if (ct === 'Prospección' && lead.prospeccionDetail && lead.prospeccionDetail.trim() !== '') {
+                        clientTypeBadges = `
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="px-2.5 py-1 rounded-full text-xs font-semibold border ${ctColor}">${ct}</span>
+                                <span class="px-2.5 py-1 rounded-full text-xs font-black border bg-purple-100 text-purple-800 border-purple-300 shadow-sm">${lead.prospeccionDetail}</span>
+                            </div>
+                        `;
+                    }
+
                     tableRowHTML = `
                         <td class="px-6 py-4 text-slate-600 font-medium border-b border-slate-100 whitespace-nowrap">${lead.date || '-'}</td>
                         <td class="px-6 py-4 border-b border-slate-100 max-w-[250px] break-words whitespace-normal">
@@ -1848,7 +1866,7 @@ container.className = "space-y-4 w-full animate-none";
                             ${getInteractionsHTML(lead)}
                         </td>
                         <td class="px-6 py-4 border-b border-slate-100 whitespace-nowrap">
-                            <span class="px-2.5 py-1 rounded-full text-xs font-semibold border ${ctColor}">${ct}</span>
+                            ${clientTypeBadges}
                         </td>
                         <td class="px-6 py-4 text-slate-707 font-semibold tracking-wide border-b border-slate-100 whitespace-nowrap">${phoneDisplay}</td>
                         <td class="px-6 py-4 border-b border-slate-100 max-w-[200px] break-words whitespace-normal">${filtradoLabel}</td>
@@ -1868,6 +1886,7 @@ container.className = "space-y-4 w-full animate-none";
                             </div>
                         </td>
                     `;
+                }
                 } else if (activeTab === 'facturadas') {
                     const isLead = !lead.clientType;
                     const originBadge = isLead 
@@ -1909,6 +1928,18 @@ container.className = "space-y-4 w-full animate-none";
             lucide.createIcons();
         }
 
+```javascript
+        function toggleProspeccionDetail(clientTypeValue) {
+            const detailContainer = document.getElementById('form-prospeccion-detail-container');
+            if (!detailContainer) return;
+            if (clientTypeValue === 'Prospección') {
+                detailContainer.classList.remove('hidden');
+            } else {
+                detailContainer.classList.add('hidden');
+                document.getElementById('form-prospeccion-detail').value = "";
+            }
+        }
+
         function openLeadModal() {
             const ent = (activeTab === 'leads' ? 'Lead' : (activeTab === 'clientes' ? 'Cliente' : 'Venta'));
             const modalTitleEl = document.getElementById('modal-title');
@@ -1925,6 +1956,8 @@ container.className = "space-y-4 w-full animate-none";
             document.getElementById('form-email').value = ""; 
             document.getElementById('form-model').value = "";
             document.getElementById('form-client-type').value = "Piso";
+            document.getElementById('form-prospeccion-detail').value = "";
+            toggleProspeccionDetail("Piso");
             
             document.getElementById('form-chk-contact').checked = false;
             document.getElementById('form-chk-cotizacion').checked = false;
@@ -1981,13 +2014,17 @@ container.className = "space-y-4 w-full animate-none";
             document.getElementById('form-email').value = Math_lead.email || ""; 
             document.getElementById('form-model').value = Math_lead.model || "";
             
+          ```javascript
             const formClientTypeContainer = document.getElementById('form-client-type-container');
             if (formClientTypeContainer) {
                 if (!isLead) {
                     formClientTypeContainer.classList.remove('hidden');
                     document.getElementById('form-client-type').value = Math_lead.clientType || "Piso";
+                    document.getElementById('form-prospeccion-detail').value = Math_lead.prospeccionDetail || "";
+                    toggleProspeccionDetail(Math_lead.clientType || "Piso");
                 } else {
                     formClientTypeContainer.classList.add('hidden');
+                    toggleProspeccionDetail("");
                 }
             }
             
@@ -2199,6 +2236,7 @@ container.className = "space-y-4 w-full animate-none";
                 ? document.getElementById('form-facturada-date').value 
                 : '';
 
+          ```javascript
             const payload = {
                 name: nameVal,
                 phone: phoneVal,
@@ -2206,6 +2244,9 @@ container.className = "space-y-4 w-full animate-none";
                 agent: "Oscar Ayuso", 
                 model: document.getElementById('form-model').value,
                 clientType: isClientForm ? document.getElementById('form-client-type').value : '',
+                prospeccionDetail: (isClientForm && document.getElementById('form-client-type').value === 'Prospección') 
+                    ? document.getElementById('form-prospeccion-detail').value.trim() 
+                    : '',
                 source: isClientForm ? document.getElementById('form-client-type').value : 'GWM', 
                 date: document.getElementById('form-date').value,
                 contacted: document.getElementById('form-chk-contact').checked,
@@ -2646,7 +2687,7 @@ container.className = "space-y-4 w-full animate-none";
                             .upsert(sanitizedLeads, { onConflict: 'id' });
                         if (err1) throw err1;
                     }
-
+```javascript
                     // Sincronizar Clientes
                     if (clientes.length > 0) {
                         const sanitizedClientes = clientes.map(c => ({
@@ -2659,6 +2700,7 @@ container.className = "space-y-4 w-full animate-none";
                             agent: c.agent || "Oscar Ayuso",
                             model: c.model || null,
                             clientType: c.clientType || "Piso",
+                            prospeccionDetail: c.prospeccionDetail || null,
                             source: c.source || c.clientType || "GWM",
                             contacted: !!c.contacted,
                             cotizacion: !!c.cotizacion,
