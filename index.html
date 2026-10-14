@@ -1838,7 +1838,7 @@ container.className = "space-y-4 w-full animate-none";
                             </div>
                         </td>
                     `;
-   ```javascript
+   
                 } else if (activeTab === 'clientes') {
                     const ct = lead.clientType || 'Piso';
                     let ctColor = 'bg-slate-50 text-slate-600 border-slate-200';
@@ -1928,7 +1928,7 @@ container.className = "space-y-4 w-full animate-none";
             lucide.createIcons();
         }
 
-```javascript
+
         function toggleProspeccionDetail(clientTypeValue) {
             const detailContainer = document.getElementById('form-prospeccion-detail-container');
             if (!detailContainer) return;
@@ -2014,7 +2014,7 @@ container.className = "space-y-4 w-full animate-none";
             document.getElementById('form-email').value = Math_lead.email || ""; 
             document.getElementById('form-model').value = Math_lead.model || "";
             
-          ```javascript
+         
             const formClientTypeContainer = document.getElementById('form-client-type-container');
             if (formClientTypeContainer) {
                 if (!isLead) {
@@ -2236,7 +2236,7 @@ container.className = "space-y-4 w-full animate-none";
                 ? document.getElementById('form-facturada-date').value 
                 : '';
 
-          ```javascript
+         
             const payload = {
                 name: nameVal,
                 phone: phoneVal,
@@ -2687,7 +2687,7 @@ container.className = "space-y-4 w-full animate-none";
                             .upsert(sanitizedLeads, { onConflict: 'id' });
                         if (err1) throw err1;
                     }
-```javascript
+
                     // Sincronizar Clientes
                     if (clientes.length > 0) {
                         const sanitizedClientes = clientes.map(c => ({
