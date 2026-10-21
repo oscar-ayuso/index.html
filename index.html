@@ -1330,14 +1330,25 @@
             });
         }
 
-        async function deleteLink(id) {
-            showConfirm("¿Estás seguro de eliminar este enlace?", async function() {
-                workLinks = workLinks.filter(l => l.id !== id);
-                await autoSave();
-                showToast("Enlace eliminado.");
-                renderCategorizedLinks();
-            });
+    async function deleteLink(id) {
+    showConfirm("¿Estás seguro de eliminar este enlace?", async function() {
+        // 1. Eliminar en Supabase si hay usuario conectado
+        if (supabaseClient && currentUser) {
+            try {
+                const { error } = await supabaseClient.from('gwm_links').delete().eq('id', parseInt(id));
+                if (error) console.error("Error borrando en Supabase:", error);
+            } catch (err) {
+                console.error("Error al conectar borrado Supabase:", err);
+            }
         }
+
+        // 2. Actualizar lista local y guardar
+        workLinks = workLinks.filter(l => l.id !== id);
+        await autoSave();
+        showToast("Enlace eliminado.");
+        renderCategorizedLinks();
+    });
+}
 
         function renderKPIs() {
             const container = document.getElementById('kpis-dynamic-grid');
@@ -2907,7 +2918,7 @@
                         }));
 
                         const { error: err3 } = await supabaseClient.from('gwm_links').upsert(sanitizedLinks, { onConflict: 'id' });
-                        if (err3) console.warn("Aviso Supabase (gwm_links):", err3.message);
+                        if (err3) throw err3;
                     }
 
                     if (indicator) {
